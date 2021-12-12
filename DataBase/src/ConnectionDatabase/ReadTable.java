@@ -6,7 +6,7 @@ public class ReadTable implements ManagingDatabase{
 
 
     @Override
-    public void managingtable(Connection databaseConnection) {
+    public void ManagingTable(Connection databaseConnection) {
 
     }
 }

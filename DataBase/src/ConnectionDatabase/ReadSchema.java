@@ -18,7 +18,7 @@ public class ReadSchema implements ManagingDatabase {
         }
     }
 
-    public void managingtable(Connection databaseConnection) {
+    public void ManagingTable(Connection databaseConnection) {
         getSchema(databaseConnection);
 
     }
