@@ -26,6 +26,8 @@ public class Control {
 		connectionDataBase();
 		connectionDataBase();
 
+
+
 	
 	}
 }
