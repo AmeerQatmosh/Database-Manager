@@ -1,8 +1,10 @@
-package ConnectionDatabase;
+package insert;
+
+import ManagingDB.*;
 
 import java.sql.*;
 
-public class InsertData implements ManagingDatabase{
+public class InsertData implements ManagingDatabase {
 
 
     @Override

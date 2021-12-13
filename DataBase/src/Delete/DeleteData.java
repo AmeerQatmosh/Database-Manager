@@ -1,7 +1,10 @@
-package ConnectionDatabase;
+package Delete;
+
+import ManagingDB.*;
+
 import java.sql.*;
 import java.util.Scanner;
-public class DeleteData extends SchemaName implements ManagingDatabase{
+public class DeleteData extends SchemaName implements ManagingDatabase {
     public void deleteData(Connection connection) {
         try {
             // get table name and id number to delete

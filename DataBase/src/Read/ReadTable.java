@@ -1,8 +1,11 @@
-package ConnectionDatabase;
+package Read;
+
+import ManagingDB.*;
+
 import java.util.*;
 import java.sql.*;
 
-public class ReadTable extends SchemaName implements ManagingDatabase{
+public class ReadTable extends SchemaName implements ManagingDatabase {
 
 
     public void getTable(Connection connection){

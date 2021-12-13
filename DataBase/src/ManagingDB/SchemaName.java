@@ -1,4 +1,4 @@
-package ConnectionDatabase;
+package ManagingDB;
 
 public class SchemaName {
 

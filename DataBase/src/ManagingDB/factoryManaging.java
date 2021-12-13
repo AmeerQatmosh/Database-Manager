@@ -1,8 +1,12 @@
-package ConnectionDatabase;
+package ManagingDB;
+
+import Delete.*;
+import Read.*;
+import insert.*;
 
 public class factoryManaging {
 
-    public  ManagingDatabase tables(String nametable){
+    public ManagingDatabase tables(String nametable){
         switch(nametable){
             case "ReadSchema":
                 return new ReadSchema();

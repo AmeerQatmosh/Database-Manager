@@ -1,9 +1,11 @@
-package ConnectionDatabase;
+package Delete;
+
+import ManagingDB.*;
 
 import java.sql.*;
 import java.util.Scanner;
 
-public class DeleteTable extends SchemaName implements ManagingDatabase{
+public class DeleteTable extends SchemaName implements ManagingDatabase {
     public void deleteTable(Connection connection) {
         try {
             // get table name to drop

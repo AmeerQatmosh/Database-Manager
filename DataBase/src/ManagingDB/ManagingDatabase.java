@@ -1,4 +1,4 @@
-package ConnectionDatabase;
+package ManagingDB;
 
 import java.sql.*;
 

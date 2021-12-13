@@ -1,4 +1,6 @@
-package ConnectionDatabase;
+package Read;
+
+import ManagingDB.*;
 
 import java.sql.*;
 import java.util.Scanner;
