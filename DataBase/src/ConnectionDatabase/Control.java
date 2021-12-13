@@ -4,8 +4,8 @@ import java.sql.Connection;
 import java.util.Scanner;
 
 import logIn.logIn;
-import profile.mysql;
-import signUp.signUp;
+import profile.*;
+import signUp.*;
 
 public class Control {
 	
