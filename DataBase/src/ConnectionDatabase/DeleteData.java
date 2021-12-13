@@ -1,19 +1,20 @@
 package ConnectionDatabase;
-
 import java.sql.*;
 import java.util.Scanner;
-
-public class DeleteTable extends SchemaName implements ManagingDatabase{
-    public void deleteTable(Connection connection) {
+public class DeleteData extends SchemaName implements ManagingDatabase{
+    public void deleteData(Connection connection) {
         try {
-            // get table name to drop
+            // get table name and id number to delete
             Scanner sc= new Scanner(System.in);
-            System.out.println("Enter Table Name To drop");
+            System.out.println("Enter Table Name");
             String table = sc.nextLine();
+            System.out.println("Enter id To Delete");
+            int id = sc.nextInt();
 
-            String sql = "DROP TABLE "+getGetName()+"."+table;
+            String sql = "DELETE FROM "+getGetName()+"."+table+" WHERE id = "+id;
             PreparedStatement pstmt = connection.prepareStatement(sql); {
-                // execute the drop statement
+
+                // execute the delete statement
                 pstmt.executeUpdate();
 
             }
@@ -23,6 +24,6 @@ public class DeleteTable extends SchemaName implements ManagingDatabase{
         }
     }
     public void ManagingTable(Connection databaseConnection) {
-        deleteTable(databaseConnection);
+        deleteData(databaseConnection);
     }
 }
