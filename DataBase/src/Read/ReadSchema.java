@@ -6,7 +6,7 @@ import java.sql.*;
 import java.util.Scanner;
 
 public class ReadSchema extends SchemaName implements ManagingDatabase {
-    public void getSchema(Connection connection){
+    public static void getSchema(Connection connection){
         try {
             // getting Database Schema Names
             ResultSet rs = connection.getMetaData().getCatalogs();

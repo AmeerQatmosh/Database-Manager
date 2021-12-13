@@ -2,7 +2,9 @@ package ConnectionDatabase;
 
 import java.sql.Connection;
 import java.util.Scanner;
-
+import ManagingDB.*;
+import Read.*;
+import export.Export;
 import logIn.logIn;
 import profile.*;
 import signUp.*;
@@ -39,6 +41,8 @@ public class Control {
 		connectionDataBase();
 		mysql x = new mysql ();
 		Connection MySQL  = x.getconnectio();
+		ReadSchema.getSchema(MySQL);
+		Export.exportData(MySQL);
 		System.out.println("sign up : 1");
 		System.out.println("log up : 2");
 		System.out.println("exist : 0");
