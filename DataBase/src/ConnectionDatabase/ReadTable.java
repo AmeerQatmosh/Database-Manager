@@ -1,10 +1,12 @@
 package ConnectionDatabase;
+
+import java.sql.Connection;
 import java.util.*;
 import java.sql.*;
 
 public class ReadTable implements ManagingDatabase{
 
-
+    
     public void getTable(Connection connection){
         try {
 
