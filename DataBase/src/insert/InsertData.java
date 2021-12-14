@@ -23,7 +23,12 @@ public class InsertData extends SchemaName implements ManagingDatabase {
             // INSERT INTO FDSFS VALUES (1, OAMR)
             for (int i =1;i<=columnCount;i++){
                 System.out.println("insert into "+rsmd.getColumnName(i));
-                Values += sc.nextLine()+", ";
+                if(rsmd.getColumnTypeName(i)=="int"){
+                    Values += sc.nextLine()+", ";
+                }
+                else{
+                    Values += "'"+sc.nextLine()+"', ";
+                }
             }
             Values += ")";
             stmt.executeQuery("INSERT INTO "+getGetName()+"."+table+" VALUES "+Values);
