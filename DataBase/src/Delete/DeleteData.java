@@ -1,6 +1,7 @@
 package Delete;
 
 import ManagingDB.*;
+import logger.logger;
 
 import java.sql.*;
 import java.util.Scanner;
@@ -19,10 +20,12 @@ public class DeleteData extends SchemaName implements ManagingDatabase {
 
                 // execute the delete statement
                 pstmt.executeUpdate();
+                logger.logInfo("Rows Deleted From "+ table +" Successfully");
 
             }
         } catch (SQLException e) {
             // TODO Auto-generated catch block
+            logger.logError(e.getMessage());
             e.printStackTrace();
         }
     }

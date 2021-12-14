@@ -5,6 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import logIn.logIn;
 
 public final  class logger {
 		private static final logger instance = new logger();
@@ -61,7 +62,7 @@ public final  class logger {
 		public static void logInfo(String message){
 			try{
 				FileWriter out = new FileWriter(logger.logFile, true);
-				out.write("[Info]"+message+"\n");
+				out.write("[User ID]"+logIn.inpID+"[Info]"+message+"\n");
 				out.close();
 			}catch(IOException e){
 				System.err.println("ERROR: Could not write to log file");
@@ -71,7 +72,7 @@ public final  class logger {
 		public static void logError(String message){
 			try{
 				FileWriter out = new FileWriter(logger.logFile, true);
-				out.write("[Error]"+message+"\n");
+				out.write("[User ID]"+logIn.inpID+"[Error]"+message+"\n");
 				out.close();
 			}catch(IOException e){
 				System.err.println("ERROR: Could not write to log file");
@@ -81,7 +82,7 @@ public final  class logger {
 		public static void logDebug(String message){
 			try{
 				FileWriter out = new FileWriter(logger.logFile, true);
-				out.write("[Debug]"+message+"\n");
+				out.write("[User ID]"+logIn.inpID+"[Debug]"+message+"\n");
 				out.close();
 			}catch(IOException e){
 				System.err.println("ERROR: Could not write to log file");
@@ -91,7 +92,7 @@ public final  class logger {
 		public static void logWarning(String message){
 			try{
 				FileWriter out = new FileWriter(logger.logFile, true);
-				out.write("[Warning]"+message+"\n");
+				out.write("[User ID]"+logIn.inpID+"[Warning]"+message+"\n");
 				out.close();
 			}catch(IOException e){
 				System.err.println("ERROR: Could not write to log file");

@@ -1,6 +1,7 @@
 package insert;
 
 import ManagingDB.*;
+import logger.logger;
 
 import java.sql.*;
 import java.util.Scanner;
@@ -38,8 +39,10 @@ public class InsertData extends SchemaName implements ManagingDatabase {
 
             stmt2.executeUpdate("INSERT INTO "+getGetName()+"."+table+" VALUES "+Values); 
             System.out.println();
+            logger.logInfo("Inserted Into "+ table +" Successfully");
 
         } catch(SQLException e) {
+            logger.logError(e.getMessage());
             System.out.println("SQL exception occured" + e);
         }
     }

@@ -34,8 +34,8 @@ public class Export extends SchemaName {
             writer.writeAll(myResultSet, includeHeaders);
             
             writer.close();
-            logger.logInfo("CSV File is created successfully.");
-            System.out.println("CSV File is created successfully.");
+            logger.logInfo("CSV File for table "+ table +" is created successfully.");
+            System.out.println("CSV File for table "+ table +" is created successfully.");
         } catch (Exception e) {
             logger.logError(e.getMessage());
             e.printStackTrace();

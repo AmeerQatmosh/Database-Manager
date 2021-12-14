@@ -1,6 +1,7 @@
 package Read;
 
 import ManagingDB.*;
+import logger.logger;
 
 import java.util.*;
 import java.sql.*;
@@ -22,7 +23,7 @@ public class ReadTable extends SchemaName implements ManagingDatabase {
             Scanner sc= new Scanner(System.in);
             System.out.println("Enter Table Name");
             String table = sc.nextLine();
-
+            logger.logInfo("Table "+ table +" Selected To Show Successfully");
             //Show all columns for selected table
             Statement stmt = connection.createStatement();
             ResultSet rs2 = stmt.executeQuery("SELECT * FROM "+getGetName()+"."+table);
@@ -38,7 +39,9 @@ public class ReadTable extends SchemaName implements ManagingDatabase {
                 }
                 System.out.println();
             }
+            logger.logInfo("All "+ table +" Data Showed Successfully");
         } catch(SQLException e) {
+            logger.logError(e.getMessage());
             System.out.println("SQL exception occured" + e);
         }
     }

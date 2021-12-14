@@ -1,4 +1,6 @@
 package profile;
+import logger.logger;
+
 import java.sql.*;
 public class mysql {
 	public Connection getconnectio() {
@@ -9,9 +11,13 @@ public class mysql {
 		Statement stmt=con.createStatement();  
 		
 		return con ;
-		}catch(Exception e){ System.out.println(e);}
-	return null ;  
 		}
+	catch(Exception e){
+		logger.logError(e.getMessage());
+		System.out.println(e);
+	}
+		return null ;
+	}
 
 }
 

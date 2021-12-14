@@ -10,6 +10,7 @@ import Read.*;
 import export.Export;
 import insert.InsertData;
 import logIn.logIn;
+import logger.logger;
 import profile.*;
 import signUp.*;
 
@@ -87,10 +88,12 @@ public class Control {
 						  break ;
 					  case 4 :  
 						  Drop.ManagingTable(MySQL);
-					  case 0: 
+					  case 0:
+						  logger.logInfo("User Signed-Out from sys");
 						  break;
 					  default:
-						  System.out.println("Uncorrect input ... ");
+						  logger.logWarning("User's Input Incorrect");
+						  System.out.println("Incorrect input ... ");
 					  }
 					  System.out.println("ReadTable : 1");
 					  System.out.println("Insert data : 2");
@@ -122,10 +125,12 @@ public class Control {
 					  case 2 :
 						  Insert.ManagingTable(MySQL);
 						  break ;
-					  case 0: 
+					  case 0:
+						  logger.logInfo("User Signed-Out from sys");
 						  break;
 					  default:
-						  System.out.println("Uncorrect input ... ");
+						  logger.logWarning("User's Input Incorrect");
+						  System.out.println("Incorrect input ... ");
 					  }
 					  System.out.println("ReadTable : 1");
 					  System.out.println("Insert data : 2");
@@ -149,10 +154,12 @@ public class Control {
 					  case 1:			  
 						  Table.ManagingTable(MySQL);
 						  break;
-					  case 0: 
+					  case 0:
+						  logger.logInfo("User Signed-Out from sys");
 						  break;
 					  default:
-						  System.out.println("Uncorrect input ... ");
+						  logger.logWarning("User's Input Incorrect");
+						  System.out.println("Incorrect input ... ");
 					  }
 					  System.out.println("ReadTable : 1");
 					  System.out.println("Log out : 0");
@@ -162,13 +169,14 @@ public class Control {
 
 			  }
 			  else if (Type == 3) {
-				  System.out.println("Uncorrect password or id");
+				  System.out.println("Incorrect password or id");
 				  break;
 			  }
-			  case 0: 
+				case 0:
 				  break;
 			  default:
-				  System.out.println("Uncorrect input ... ");
+				  logger.logWarning("User's Input Incorrect");
+				  System.out.println("Incorrect input ... ");
 			}
 			System.out.println("sign up : 1");
 			System.out.println("log in : 2");
@@ -176,7 +184,7 @@ public class Control {
 			x1  = option.nextInt();
 
 		}
-		
+		logger.logInfo("User Closed the sys");
 		System.out.println("Exist ...");
 	
 	}
