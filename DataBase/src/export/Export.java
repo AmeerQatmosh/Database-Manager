@@ -15,6 +15,15 @@ public class Export extends SchemaName {
 //                "C:\\Documents and Settings\\admin\\My Documents\\NetBeansProjects\\AutomateExcelDatabase\\myjdbcfile.csv";
         try {
 
+//            CSVWriter writer = new CSVWriter(new FileWriter("yourfile.csv"), '\t');
+//            Boolean includeHeaders = true;
+//
+//            java.sql.ResultSet myResultSet = .... //your resultset logic here
+//
+//            writer.writeAll(myResultSet, includeHeaders);
+//
+//            writer.close();
+
         	 PrintWriter pw= new PrintWriter(new File("C:\\Users\\MSI\\Desktop\\test2\\test3.csv"));
         	    StringBuilder sb=new StringBuilder();
 
