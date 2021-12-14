@@ -17,19 +17,14 @@ public class Export extends SchemaName {
             Scanner sc= new Scanner(System.in);
             System.out.println("Enter Table Name");
             String table = sc.nextLine();
-            DatabaseMetaData md = connection.getMetaData();
-            ResultSet rs1 = md.getTables(null, getGetName(), table, null);
 
-            int countC = 0;
-            while (rs1.next()) {
-                countC++;
-            }
+
 
             Statement stmt = connection.createStatement();
             ResultSet rs = stmt.executeQuery("SELECT * FROM "+getGetName()+"."+table);
-
+            int columnCount = rs.getMetaData().getColumnCount();
             while (rs.next()) {
-                for (int i =0;i<countC;i++){
+                for (int i =1;i<=columnCount;i++){
                     fw.append(rs.getString(i));
                     fw.append(',');
                 }
