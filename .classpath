@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="DataBase/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="DataBase/libs/mysql-connector-java-8.0.23.jar"/>
+	<classpathentry kind="lib" path="C:/Users/MSI/Desktop/new/مجلد جديد/project_advance/DataBase/libs/opencsv-5.5.2.jar"/>
 	<classpathentry kind="output" path="DataBase/bin"/>
 </classpath>
