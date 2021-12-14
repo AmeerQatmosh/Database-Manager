@@ -1,14 +1,15 @@
 package export;
 
 import ManagingDB.SchemaName;
-
-import java.io.File;
-import java.io.FileWriter;
-import java.io.PrintWriter;
-import java.sql.*;
-import java.util.Scanner;
-import java.util.Date;
 import com.opencsv.CSVWriter;
+import logger.logger;
+
+import java.io.FileWriter;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.Date;
+import java.util.Scanner;
 
 public class Export extends SchemaName {
 
@@ -33,10 +34,12 @@ public class Export extends SchemaName {
             writer.writeAll(myResultSet, includeHeaders);
             
             writer.close();
-            
+            logger.logInfo("CSV File is created successfully.");
             System.out.println("CSV File is created successfully.");
         } catch (Exception e) {
+            logger.logError(e.getMessage());
             e.printStackTrace();
+
         }
     }
 }

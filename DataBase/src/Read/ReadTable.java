@@ -10,7 +10,6 @@ public class ReadTable extends SchemaName implements ManagingDatabase {
 
     public static void getTable(Connection connection){
         try {
-            int count = 0;
             // Show all tables from selected schema
             DatabaseMetaData md = connection.getMetaData();
             String[] types = {"TABLE"};
@@ -24,7 +23,7 @@ public class ReadTable extends SchemaName implements ManagingDatabase {
             System.out.println("Enter Table Name");
             String table = sc.nextLine();
 
-            //Show all columns names for selected table
+            //Show all columns for selected table
             Statement stmt = connection.createStatement();
             ResultSet rs2 = stmt.executeQuery("SELECT * FROM "+getGetName()+"."+table);
             ResultSetMetaData rsmd = rs2.getMetaData();
