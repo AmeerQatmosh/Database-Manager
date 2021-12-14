@@ -8,7 +8,7 @@ import java.sql.*;
 public class ReadTable extends SchemaName implements ManagingDatabase {
 
 
-    public void getTable(Connection connection){
+    public static void getTable(Connection connection){
         try {
             int count = 0;
             // Show all tables from selected schema
