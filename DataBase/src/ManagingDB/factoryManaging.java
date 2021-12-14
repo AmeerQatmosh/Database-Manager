@@ -10,7 +10,7 @@ public class factoryManaging {
         switch(nametable){
             case "ReadSchema":
                 return new ReadSchema();
-            case "InsertTable":
+            case "InsertData":
                 return new InsertData();
             case "ReadTable":
                 return new ReadTable();

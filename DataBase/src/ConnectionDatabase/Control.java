@@ -45,8 +45,8 @@ public class Control {
 		connectionDataBase();
 		mysql x = new mysql ();
 		Connection MySQL  = x.getconnectio();
-		ReadSchema.getSchema(MySQL);
-		DeleteTable.deleteTable(MySQL);
+//		ReadSchema.getSchema(MySQL);
+//		DeleteTable.deleteTable(MySQL);
 //		DeleteData.deleteData(MySQL);
 //		InsertData.insert(MySQL);
 //		Export.exportData(MySQL);
@@ -56,14 +56,128 @@ public class Control {
 		System.out.println("exist : 0");
 		Scanner option= new Scanner(System.in);
 		int x1  = option.nextInt();
+		
+		
+		
+		
+		
+		
+		factoryManaging factoryManaging = new factoryManaging();
+		
+		ManagingDatabase Table = factoryManaging.tables("ReadTable");
+		ManagingDatabase Schema = factoryManaging.tables("ReadSchema");
+		ManagingDatabase Drop = factoryManaging.tables("DeleteTable");
+		ManagingDatabase Delete = factoryManaging.tables("DeleteData");
+		ManagingDatabase Insert = factoryManaging.tables("InsertData");
 		while (x1!= 0) {
 			switch(x1) {
 			  case 1:
 			 signUp.signup(MySQL);
 			    break;
 			  case 2:
-			  logIn.logIn(MySQL);
-			    break;
+			  int Type = logIn.logIn(MySQL);
+			  if (Type == 0) {
+				  
+				  Schema.ManagingTable(MySQL);
+				  
+				  System.out.println("ReadTable : 1");
+				  System.out.println("Insert data : 2");
+				  System.out.println("DeleteData : 3");
+				  System.out.println("DropTable : 4");
+				  System.out.println("Log out : 0");
+				  Scanner option2= new Scanner(System.in);
+				  int x2 = option.nextInt();
+				  
+				  while(x2!=0) {
+					  switch(x2) {
+					  case 1:			  
+						  Table.ManagingTable(MySQL);
+						  break;
+					  case 2 :
+						  Insert.ManagingTable(MySQL);
+						  break ;
+					  case 3 : 
+						  Delete.ManagingTable(MySQL);
+						  break ;
+					  case 4 :  
+						  Drop.ManagingTable(MySQL);
+					  case 0: 
+						  break;
+					  default:
+						  System.out.println("Uncorrect input ... ");
+					  }
+					  System.out.println("ReadTable : 1");
+					  System.out.println("Insert data : 2");
+					  System.out.println("DeleteData : 3");
+					  System.out.println("DropTable : 4");
+					  System.out.println("Log out : 0");
+					  x2 = option.nextInt();
+				  }
+				  
+				  
+				
+			  }
+			  else if (Type == 1) {
+				  Schema.ManagingTable(MySQL);
+				  
+				  System.out.println("ReadTable : 1");
+				  System.out.println("Insert data : 2");
+				  System.out.println("Log out : 0");
+				  Scanner option2= new Scanner(System.in);
+				  int x2 = option.nextInt();
+				  
+				  while(x2!=0) {
+					  switch(x2) {
+					  case 1:			  
+						  Table.ManagingTable(MySQL);
+						  break;
+					  case 2 :
+						  Insert.ManagingTable(MySQL);
+						  break ;
+					  case 0: 
+						  break;
+					  default:
+						  System.out.println("Uncorrect input ... ");
+					  }
+					  System.out.println("ReadTable : 1");
+					  System.out.println("Insert data : 2");
+					  System.out.println("Log out : 0");
+					  x2 = option.nextInt();
+				  }
+				  
+
+			  }
+			  else if (Type == 2) {
+				  Schema.ManagingTable(MySQL);
+				  
+				  System.out.println("ReadTable : 1");
+				  System.out.println("Log out : 0");
+				  Scanner option2= new Scanner(System.in);
+				  int x2 = option.nextInt();
+				  
+				  while(x2!=0) {
+					  switch(x2) {
+					  case 1:			  
+						  Table.ManagingTable(MySQL);
+						  break;
+					  case 0: 
+						  break;
+					  default:
+						  System.out.println("Uncorrect input ... ");
+					  }
+					  System.out.println("ReadTable : 1");
+					  System.out.println("Log out : 0");
+					  x2 = option.nextInt();
+				  }
+				  
+
+			  }
+			  else if (Type == 3) {
+				  System.out.println("Uncorrect password or id");
+				  break;
+			  }
+			  case 0: 
+				  break;
 			  default:
 				  System.out.println("Uncorrect input ... ");
 			}

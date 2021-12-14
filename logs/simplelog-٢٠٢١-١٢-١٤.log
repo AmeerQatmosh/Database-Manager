@@ -16,3 +16,9 @@
 [Info]Type 0
 [Error]sqlinsert into user (id,name,password,type) VALUES (?,?,? ,?)
 [Error]pscom.mysql.cj.jdbc.ClientPreparedStatement: insert into user (id,name,password,type) VALUES (** NOT SPECIFIED **,** NOT SPECIFIED **,** NOT SPECIFIED ** ,** NOT SPECIFIED **)
+[Info]email 0000
+[Info]name mustafa
+[Info]password 9889
+[Info]Type 1
+[Error]sqlinsert into user (id,name,password,type) VALUES (?,?,? ,?)
+[Error]pscom.mysql.cj.jdbc.ClientPreparedStatement: insert into user (id,name,password,type) VALUES (** NOT SPECIFIED **,** NOT SPECIFIED **,** NOT SPECIFIED ** ,** NOT SPECIFIED **)
