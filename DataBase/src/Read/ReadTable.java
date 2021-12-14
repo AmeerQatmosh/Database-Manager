@@ -13,9 +13,10 @@ public class ReadTable extends SchemaName implements ManagingDatabase {
             int count = 0;
             // Show all tables from selected schema
             DatabaseMetaData md = connection.getMetaData();
-            ResultSet rs1 = md.getTables(null, getGetName(), "%", null);
+            String[] types = {"TABLE"};
+            ResultSet rs1 = md.getTables(null, getGetName(), "%", types);
             while (rs1.next()) {
-                System.out.println(rs1.getString(3));
+                System.out.println(rs1.getString("TABLE_NAME"));
             }
 
             //Get table name from user
