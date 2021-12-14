@@ -16,6 +16,7 @@ public class InsertData extends SchemaName implements ManagingDatabase {
 
             //Show all columns names for selected table
             Statement stmt = connection.createStatement();
+            
             ResultSet rs2 = stmt.executeQuery("SELECT * FROM "+getGetName()+"."+table);
             ResultSetMetaData rsmd = rs2.getMetaData();
             int columnCount = rsmd.getColumnCount();
@@ -23,7 +24,7 @@ public class InsertData extends SchemaName implements ManagingDatabase {
             // INSERT INTO FDSFS VALUES (1, OAMR)
             for (int i =1;i<=columnCount;i++){
                 System.out.println("insert into "+rsmd.getColumnName(i));
-                if(rsmd.getColumnTypeName(i)=="int"){
+                if(rsmd.getColumnTypeName(i)=="INT"){
                     Values += sc.nextLine()+", ";
                 }
                 else{
@@ -31,7 +32,11 @@ public class InsertData extends SchemaName implements ManagingDatabase {
                 }
             }
             Values += ")";
-            stmt.executeQuery("INSERT INTO "+getGetName()+"."+table+" VALUES "+Values);
+            Values = Values.replace(", )", ")");
+           
+            Statement stmt2 = connection.createStatement();
+
+            stmt2.executeUpdate("INSERT INTO "+getGetName()+"."+table+" VALUES "+Values);
             System.out.println();
 
         } catch(SQLException e) {
