@@ -1,18 +1,22 @@
 package export;
 
 import ManagingDB.SchemaName;
+
+import java.io.File;
 import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.sql.*;
 import java.util.Scanner;
 
 public class Export extends SchemaName {
 
     public static void exportData(Connection connection){
-        String filename =
-                "C:\\Documents and Settings\\admin\\My Documents\\NetBeansProjects\\AutomateExcelDatabase\\myjdbcfile.csv";
+//        String filename =
+//                "C:\\Documents and Settings\\admin\\My Documents\\NetBeansProjects\\AutomateExcelDatabase\\myjdbcfile.csv";
         try {
 
-            FileWriter fw = new FileWriter(filename);
+        	 PrintWriter pw= new PrintWriter(new File("C:\\Users\\MSI\\Desktop\\test2\\test3.csv"));
+        	    StringBuilder sb=new StringBuilder();
 
             Scanner sc= new Scanner(System.in);
             System.out.println("Enter Table Name");
@@ -25,14 +29,15 @@ public class Export extends SchemaName {
             int columnCount = rs.getMetaData().getColumnCount();
             while (rs.next()) {
                 for (int i =1;i<=columnCount;i++){
-                    fw.append(rs.getString(i));
-                    fw.append(',');
+                    sb.append(rs.getString(i));
+                    sb.append(",");
                 }
-                fw.append('\n');
+                sb.append("\r\n");
             }
 
-            fw.flush();
-            fw.close();
+            pw.write(sb.toString());
+            pw.close();
+            System.out.println("finished");
             System.out.println("CSV File is created successfully.");
         } catch (Exception e) {
             e.printStackTrace();
