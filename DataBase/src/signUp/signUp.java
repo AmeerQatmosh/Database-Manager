@@ -8,14 +8,14 @@ import java.util.Scanner;
 import logger.logger;
 
 public class signUp {
-	static String  Email ,Name ,Password ;
+	static String  ID ,Name ,Password ;
 	static int  type; 
 	static logger log ;
 	public static void signup (Connection db) {
 		Scanner in= new Scanner(System.in);
-		System.out.print("enter email :");
-		Email = in.nextLine();
-		log.logInfo("email "+Email);
+		System.out.print("enter ID :");
+		ID = in.nextLine();
+		log.logInfo("email "+ID);
 
 		System.out.print("enter name :");
 		Name = in.nextLine();
@@ -31,14 +31,14 @@ public class signUp {
 		
 		
 		try {
-			String sql = "insert into user (email,name,password,type) VALUES (?,?,? ,?)";
+			String sql = "insert into user (id,name,password,type) VALUES (?,?,? ,?)";
 
 			PreparedStatement ps;
 			log.logError ("sql"+sql);
 			ps = db.prepareStatement(sql);
 			log.logError ("ps"+ps);
 
-			ps.setString(1, Email) ;
+			ps.setString(1, ID) ;
 			ps.setString(2, Name) ;
 			ps.setString(3, Password) ;
 			ps.setInt(4, type) ;

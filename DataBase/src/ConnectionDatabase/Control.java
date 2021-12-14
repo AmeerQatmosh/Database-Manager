@@ -2,6 +2,9 @@ package ConnectionDatabase;
 
 import java.sql.Connection;
 import java.util.Scanner;
+
+import Delete.DeleteData;
+import Delete.DeleteTable;
 import ManagingDB.*;
 import Read.*;
 import export.Export;
@@ -43,9 +46,11 @@ public class Control {
 		mysql x = new mysql ();
 		Connection MySQL  = x.getconnectio();
 		ReadSchema.getSchema(MySQL);
-		InsertData.insert(MySQL);
+		DeleteTable.deleteTable(MySQL);
+//		DeleteData.deleteData(MySQL);
+//		InsertData.insert(MySQL);
 //		Export.exportData(MySQL);
-	ReadTable.getTable(MySQL);
+//	ReadTable.getTable(MySQL);
 		System.out.println("sign up : 1");
 		System.out.println("log up : 2");
 		System.out.println("exist : 0");

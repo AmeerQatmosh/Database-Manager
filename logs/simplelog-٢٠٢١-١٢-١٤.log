@@ -1,0 +1,18 @@
+[Info]id 10
+[Info]name 
+[Info]id 10
+[Info]name 
+[Info]id 45
+[Info]name 
+[Info]password o
+[Info]Type 1
+[Error]sqlinsert into user (id,name,password,type) VALUES (?,?,? ,?)
+[Error]pscom.mysql.cj.jdbc.ClientPreparedStatement: insert into user (id,name,password,type) VALUES (** NOT SPECIFIED **,** NOT SPECIFIED **,** NOT SPECIFIED ** ,** NOT SPECIFIED **)
+[Info]id 87
+[Info]name 
+[Info]email 25
+[Info]name zad
+[Info]password 548
+[Info]Type 0
+[Error]sqlinsert into user (id,name,password,type) VALUES (?,?,? ,?)
+[Error]pscom.mysql.cj.jdbc.ClientPreparedStatement: insert into user (id,name,password,type) VALUES (** NOT SPECIFIED **,** NOT SPECIFIED **,** NOT SPECIFIED ** ,** NOT SPECIFIED **)

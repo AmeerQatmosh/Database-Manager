@@ -12,8 +12,8 @@ public class logIn {
 	{
 
 		Scanner keyboard = new Scanner (System.in);
-		System.out.println("Enter your Email : ");
-	    String inpEmail = keyboard.nextLine();
+		System.out.println("Enter your ID : ");
+	    String inpID = keyboard.nextLine();
 		System.out.println("Enter your Password : ");
 	    String inpPassword = keyboard.nextLine();
 	    
@@ -23,7 +23,7 @@ public class logIn {
 
     	  while(resultSet.next())
     	  {
-    		  if(resultSet.getString(1).equals(inpEmail)&&resultSet.getString(3).equals(inpPassword)) {
+    		  if(resultSet.getString(1).equals(inpID)&&resultSet.getString(3).equals(inpPassword)) {
     		  System.out.println(resultSet.getString(1)+" "+resultSet.getString(3)+" "+resultSet.getInt(4));
         	  return resultSet.getInt(4);
 

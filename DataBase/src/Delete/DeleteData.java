@@ -5,7 +5,7 @@ import ManagingDB.*;
 import java.sql.*;
 import java.util.Scanner;
 public class DeleteData extends SchemaName implements ManagingDatabase {
-    public void deleteData(Connection connection) {
+    public static void deleteData(Connection connection) {
         try {
             // get table name and id number to delete
             Scanner sc= new Scanner(System.in);
