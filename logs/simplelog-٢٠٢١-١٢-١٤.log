@@ -22,3 +22,30 @@
 [Info]Type 1
 [Error]sqlinsert into user (id,name,password,type) VALUES (?,?,? ,?)
 [Error]pscom.mysql.cj.jdbc.ClientPreparedStatement: insert into user (id,name,password,type) VALUES (** NOT SPECIFIED **,** NOT SPECIFIED **,** NOT SPECIFIED ** ,** NOT SPECIFIED **)
+[Error]Communications link failure
+
+The last packet sent successfully to the server was ? milliseconds ago. The driver has not received any packets from the server.
+[Error]Communications link failure
+
+The last packet sent successfully to the server was ? milliseconds ago. The driver has not received any packets from the server.
+[Error]Communications link failure
+
+The last packet sent successfully to the server was ? milliseconds ago. The driver has not received any packets from the server.
+[Error]Communications link failure
+
+The last packet sent successfully to the server was ? milliseconds ago. The driver has not received any packets from the server.
+[Error]Communications link failure
+
+The last packet sent successfully to the server was ? milliseconds ago. The driver has not received any packets from the server.
+[Error]Communications link failure
+
+The last packet sent successfully to the server was ? milliseconds ago. The driver has not received any packets from the server.
+[Error]Communications link failure
+
+The last packet sent successfully to the server was ? milliseconds ago. The driver has not received any packets from the server.
+[Info]email 787
+[Info]name zaia
+[Info]password 2121
+[Info]Type 1
+[Error]sqlinsert into user (id,name,password,type) VALUES (?,?,? ,?)
+[Error]pscom.mysql.cj.jdbc.ClientPreparedStatement: insert into user (id,name,password,type) VALUES (** NOT SPECIFIED **,** NOT SPECIFIED **,** NOT SPECIFIED ** ,** NOT SPECIFIED **)

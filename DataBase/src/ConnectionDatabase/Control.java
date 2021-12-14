@@ -42,7 +42,7 @@ public class Control {
 	public static void main(String args[])
 	{
 		System.out.println("Connection DataBase");
-		connectionDataBase();
+//		connectionDataBase();
 		mysql x = new mysql ();
 		Connection MySQL  = x.getconnectio();
 //		ReadSchema.getSchema(MySQL);
@@ -77,7 +77,7 @@ public class Control {
 			  case 2:
 			  int Type = logIn.logIn(MySQL);
 			  if (Type == 0) {
-				  
+				  connectionDataBase();
 				  Schema.ManagingTable(MySQL);
 				  
 				  System.out.println("ReadTable : 1");
@@ -118,6 +118,7 @@ public class Control {
 				
 			  }
 			  else if (Type == 1) {
+				  connectionDataBase();
 				  Schema.ManagingTable(MySQL);
 				  
 				  System.out.println("ReadTable : 1");
@@ -148,6 +149,7 @@ public class Control {
 
 			  }
 			  else if (Type == 2) {
+				  connectionDataBase();
 				  Schema.ManagingTable(MySQL);
 				  
 				  System.out.println("ReadTable : 1");
@@ -187,6 +189,7 @@ public class Control {
 			x1  = option.nextInt();
 
 		}
+		
 		System.out.println("Exist ...");
 	
 	}

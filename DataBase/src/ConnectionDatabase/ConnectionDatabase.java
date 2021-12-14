@@ -2,7 +2,7 @@ package ConnectionDatabase;
 
 import java.sql.*;
 import java.util.Properties;
-
+import logger.logger;
 public class ConnectionDatabase {
 	
 	 private String Root;
@@ -25,11 +25,15 @@ public class ConnectionDatabase {
 	                   ":" + this.port + "/",
 	                   connectionProps);
 	    System.out.print("The connection to database is done");
-			}  
+			}
+			else {
+				connection.close();
+			}
+			
 	} catch (SQLException e) {
 		// TODO Auto-generated catch block
-	    System.out.print("Error to  connection the database ");
-
+	    System.out.print(e.getMessage());
+	    logger.logError(e.getMessage());
 		e.printStackTrace();
 	}
 		return connection;

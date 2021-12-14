@@ -13,7 +13,7 @@ public class ReadTable extends SchemaName implements ManagingDatabase {
             // Show all tables from selected schema
             DatabaseMetaData md = connection.getMetaData();
             String[] types = {"TABLE"};
-            ResultSet rs1 = md.getTables(null, getGetName(), "%", types);
+            ResultSet rs1 = md.getTables(getGetName(), null, null, types);
             while (rs1.next()) {
                 System.out.println(rs1.getString("TABLE_NAME"));
             }
