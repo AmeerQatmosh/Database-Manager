@@ -15,7 +15,7 @@ public class signUp {
 		Scanner in= new Scanner(System.in);
 		System.out.print("enter ID :");
 		ID = in.nextLine();
-		log.logInfo("email "+ID);
+		log.logInfo("id "+ID);
 
 		System.out.print("enter name :");
 		Name = in.nextLine();

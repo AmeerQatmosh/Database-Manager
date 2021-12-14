@@ -36,7 +36,7 @@ public class InsertData extends SchemaName implements ManagingDatabase {
            
             Statement stmt2 = connection.createStatement();
 
-            stmt2.executeUpdate("INSERT INTO "+getGetName()+"."+table+" VALUES "+Values);
+            stmt2.executeUpdate("INSERT INTO "+getGetName()+"."+table+" VALUES "+Values); 
             System.out.println();
 
         } catch(SQLException e) {

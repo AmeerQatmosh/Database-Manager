@@ -49,3 +49,9 @@ The last packet sent successfully to the server was ? milliseconds ago. The driv
 [Info]Type 1
 [Error]sqlinsert into user (id,name,password,type) VALUES (?,?,? ,?)
 [Error]pscom.mysql.cj.jdbc.ClientPreparedStatement: insert into user (id,name,password,type) VALUES (** NOT SPECIFIED **,** NOT SPECIFIED **,** NOT SPECIFIED ** ,** NOT SPECIFIED **)
+[Info]id 5566
+[Info]name omar
+[Info]password 123
+[Info]Type 0
+[Error]sqlinsert into user (id,name,password,type) VALUES (?,?,? ,?)
+[Error]pscom.mysql.cj.jdbc.ClientPreparedStatement: insert into user (id,name,password,type) VALUES (** NOT SPECIFIED **,** NOT SPECIFIED **,** NOT SPECIFIED ** ,** NOT SPECIFIED **)

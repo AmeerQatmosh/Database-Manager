@@ -25,7 +25,6 @@ public class logIn {
     	  while(resultSet.next())
     	  {
     		  if(resultSet.getString(1).equals(inpID)&&resultSet.getString(3).equals(inpPassword)) {
-    		  System.out.println(resultSet.getString(1)+" "+resultSet.getString(3)+" "+resultSet.getInt(4));
         	  return resultSet.getInt(4);
 
     		  }
@@ -38,9 +37,6 @@ public class logIn {
 	}
 	
 	}
-//	public static String getID() {
-//		return inpID;
-//	}
 	
 	
 }

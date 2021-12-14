@@ -42,28 +42,14 @@ public class Control {
 	public static void main(String args[])
 	{
 		System.out.println("Connection DataBase");
-//		connectionDataBase();
 		mysql x = new mysql ();
 		Connection MySQL  = x.getconnectio();
-//		ReadSchema.getSchema(MySQL);
-//		DeleteTable.deleteTable(MySQL);
-//		DeleteData.deleteData(MySQL);
-//		InsertData.insert(MySQL);
-//		Export.exportData(MySQL);
-//	ReadTable.getTable(MySQL);
 		System.out.println("sign up : 1");
-		System.out.println("log up : 2");
+		System.out.println("log in : 2");
 		System.out.println("exist : 0");
 		Scanner option= new Scanner(System.in);
 		int x1  = option.nextInt();
-		
-		
-		
-		
-		
-		
 		factoryManaging factoryManaging = new factoryManaging();
-		
 		ManagingDatabase Table = factoryManaging.tables("ReadTable");
 		ManagingDatabase Schema = factoryManaging.tables("ReadSchema");
 		ManagingDatabase Drop = factoryManaging.tables("DeleteTable");
@@ -145,8 +131,7 @@ public class Control {
 					  System.out.println("Insert data : 2");
 					  System.out.println("Log out : 0");
 					  x2 = option.nextInt();
-				  }
-				  
+				  } 
 
 			  }
 			  else if (Type == 2) {
@@ -186,7 +171,7 @@ public class Control {
 				  System.out.println("Uncorrect input ... ");
 			}
 			System.out.println("sign up : 1");
-			System.out.println("log up : 2");
+			System.out.println("log in : 2");
 			System.out.println("exist : 0");
 			x1  = option.nextInt();
 
