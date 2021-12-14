@@ -1,6 +1,7 @@
 package profile;
 
 import ConnectionDatabase.*;
+import logIn.logIn;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -12,27 +13,23 @@ public class StoreInfoDBs {
 	 private static String password =InfoDataBase.getPass() ;
 	 private static int port=InfoDataBase.getPort();
 	 private static String locahost=InfoDataBase.getLocalhost();
-	 
+	 static String user_id = logIn.inpID;
 	public static void StoreInfoDB (Connection db) {
 
 		
 		try {
-			String sql = "insert into dbinformation (localHost,password,root,port,type) VALUES (?,? ,?,?,?)";
+			String sql = "insert into dbinformation (user_id,localHost,password,root,port) VALUES (?,?,? ,?,?)";
 
 			PreparedStatement ps;
 			ps = db.prepareStatement(sql);
 
 //			ps.setString(1, Email) ;
-			try {
-				ps.setString(1, root) ;
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			ps.setString(2, password) ;
-			ps.setInt(4, port) ;
-			ps.setString(5, locahost) ;
-//			ps.setInt(6, type) ;
+			
+			ps.setString(1, user_id) ;		
+			ps.setString(2, locahost) ;
+			ps.setString(3, password) ;
+			ps.setString(4, root) ;
+			ps.setInt(5, port) ;
 			int row = ps.executeUpdate();
 			
 		} catch (SQLException e) {

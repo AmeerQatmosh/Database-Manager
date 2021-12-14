@@ -78,8 +78,8 @@ public class Control {
 			  int Type = logIn.logIn(MySQL);
 			  if (Type == 0) {
 				  connectionDataBase();
+				  StoreInfoDBs.StoreInfoDB(MySQL);
 				  Schema.ManagingTable(MySQL);
-				  
 				  System.out.println("ReadTable : 1");
 				  System.out.println("Insert data : 2");
 				  System.out.println("DeleteData : 3");
@@ -119,6 +119,7 @@ public class Control {
 			  }
 			  else if (Type == 1) {
 				  connectionDataBase();
+				  StoreInfoDBs.StoreInfoDB(MySQL);
 				  Schema.ManagingTable(MySQL);
 				  
 				  System.out.println("ReadTable : 1");
@@ -150,6 +151,7 @@ public class Control {
 			  }
 			  else if (Type == 2) {
 				  connectionDataBase();
+				  StoreInfoDBs.StoreInfoDB(MySQL);
 				  Schema.ManagingTable(MySQL);
 				  
 				  System.out.println("ReadTable : 1");

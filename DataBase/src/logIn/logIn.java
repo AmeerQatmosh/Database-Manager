@@ -7,13 +7,14 @@ import java.util.Scanner;
 //import com.mysql.cj.xdevapi.Statement;
 
 public class logIn {
-	
+
+	public static String inpID ;
 	public static  int logIn(Connection connection)
 	{
-
+		
 		Scanner keyboard = new Scanner (System.in);
 		System.out.println("Enter your ID : ");
-	    String inpID = keyboard.nextLine();
+	     inpID = keyboard.nextLine();
 		System.out.println("Enter your Password : ");
 	    String inpPassword = keyboard.nextLine();
 	    
@@ -37,6 +38,9 @@ public class logIn {
 	}
 	
 	}
+//	public static String getID() {
+//		return inpID;
+//	}
 	
 	
 }
