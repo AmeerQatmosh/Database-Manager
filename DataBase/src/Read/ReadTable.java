@@ -31,10 +31,12 @@ public class ReadTable extends SchemaName implements ManagingDatabase {
             for (int i =1;i<=columnCount;i++){
                 System.out.print(rsmd.getColumnName(i)+"\t");
             }
+            System.out.println();
             while (rs2.next()) {
                 for (int i =1;i<=columnCount;i++){
                     System.out.print(rs2.getString(i)+"\t");
                 }
+                System.out.println();
             }
         } catch(SQLException e) {
             System.out.println("SQL exception occured" + e);
