@@ -1,4 +1,4 @@
-#          Database Manager Java Application Report
+# Database Manager Java Application Report
 ## 1. Introduction
 
 Database Manager is an Java Application for a database management system that aims to control and manage a database for any given database (Oracle, MySQL, SQLite ... etc.). 
