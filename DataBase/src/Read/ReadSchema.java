@@ -18,7 +18,7 @@ public class ReadSchema extends SchemaName implements ManagingDatabase {
             Scanner sc= new Scanner(System.in);
             System.out.println("Enter Schema Name");
             String Schema = sc.nextLine();
-            setGetName(Schema);
+            setSchemaName(Schema);
             logger.logInfo("Schema "+ Schema +" Selected Successfully");
 
         } catch (SQLException e) {

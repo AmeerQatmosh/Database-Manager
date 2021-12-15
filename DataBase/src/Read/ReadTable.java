@@ -14,7 +14,7 @@ public class ReadTable extends SchemaName implements ManagingDatabase {
             // Show all tables from selected schema
             DatabaseMetaData md = connection.getMetaData();
             String[] types = {"TABLE"};
-            ResultSet rs1 = md.getTables(getGetName(), null, null, types);
+            ResultSet rs1 = md.getTables(getSchemaName(), null, null, types);
             while (rs1.next()) {
                 System.out.println(rs1.getString("TABLE_NAME"));
             }
@@ -26,7 +26,7 @@ public class ReadTable extends SchemaName implements ManagingDatabase {
             logger.logInfo("Table "+ table +" Selected To Show Successfully");
             //Show all columns for selected table
             Statement stmt = connection.createStatement();
-            ResultSet rs2 = stmt.executeQuery("SELECT * FROM "+getGetName()+"."+table);
+            ResultSet rs2 = stmt.executeQuery("SELECT * FROM "+getSchemaName()+"."+table);
             ResultSetMetaData rsmd = rs2.getMetaData();
             int columnCount = rsmd.getColumnCount();
             for (int i =1;i<=columnCount;i++){
@@ -42,7 +42,7 @@ public class ReadTable extends SchemaName implements ManagingDatabase {
             logger.logInfo("All "+ table +" Data Showed Successfully");
         } catch(SQLException e) {
             logger.logError(e.getMessage());
-            System.out.println("SQL exception occured" + e);
+            System.out.println("SQL Exception Occurred" + e);
         }
     }
 

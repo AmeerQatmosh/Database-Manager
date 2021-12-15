@@ -1,22 +1,22 @@
 package logIn;
-import logger.logger;
 
+import logger.logger;
 import java.sql.Statement;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.util.Scanner;
 
 public class logIn {
-
-	public static String inpID ;
-	public static  int logIn(Connection connection)
+	public static String ID ;
+	
+	public static int logIn(Connection connection)
 	{
 		
-		Scanner keyboard = new Scanner (System.in);
-		System.out.println("Enter your ID : ");
-		inpID = keyboard.nextLine();
-		System.out.println("Enter your Password : ");
-	    String inpPassword = keyboard.nextLine();
+		Scanner sc = new Scanner (System.in);
+		System.out.println("Enter Your ID : ");
+		ID = sc.nextLine();
+		System.out.println("Enter Your Password : ");
+	    String Password = sc.nextLine();
 	    
       try {
     	  Statement statement= connection.createStatement();  
@@ -24,12 +24,12 @@ public class logIn {
 
     	  while(resultSet.next())
     	  {
-    		  if(resultSet.getString(1).equals(inpID)&&resultSet.getString(3).equals(inpPassword)) {
-				  logger.logInfo("Log-in into system Successfully");
+    		  if(resultSet.getString(1).equals(ID) && resultSet.getString(3).equals(Password)) {
+				  logger.logInfo("Log-in Into System Successfully");
 				  return resultSet.getInt(4);
     		  }
     	  }
-		  logger.logWarning("Log-in into system Failed");
+		  logger.logWarning("Log-in Into System Failed");
     	  return 3;
 		
 	} catch (Exception e) {

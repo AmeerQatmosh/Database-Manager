@@ -4,43 +4,39 @@ import java.sql.*;
 import java.util.Properties;
 import logger.logger;
 public class ConnectionDatabase {
-	 private static String Root;
-	 private static String pass;
-	 private static String locahost;
-	 private static int port;
+	 private static String User;
+	 private static String Password;
+	 private static String URL;
+	 private static int Port;
 	
 	public static Connection getConnection() {
-		insert();
+		SetDataInfo();
 		Connection connection = null;
 		try {
 			if(connection==null) {
 	    Properties connectionProps = new Properties();
-	    connectionProps.put("user", Root);
-	    connectionProps.put("password", pass);
+	    connectionProps.put("user", User);
+	    connectionProps.put("password", Password);
 	    	connection = DriverManager.getConnection(
 	                   "jdbc:" + "mysql" + "://" +
-	                   locahost +
-	                   ":" + port + "/",
+	                   URL +
+	                   ":" + Port + "/",
 	                   connectionProps);
-	    System.out.println("The connection to database is done ");
+	    System.out.println("Connected To DataBase Successfully");
 	    logger.logInfo("Connected To DataBase Successfully");
 	}
 	} catch (SQLException e) {
 	    System.out.print(e.getMessage());
 	    logger.logError(e.getMessage());
-		e.printStackTrace();
-		
 	}
 		return connection;
 	}
-	//insert information database 
-	public static void insert() {
-	 Root=InfoDataBase.getRoot();
-	 pass=InfoDataBase.getPass();
-	 port=InfoDataBase.getPort();
-	 locahost=InfoDataBase.getLocalhost();
+	//set information database
+	public static void SetDataInfo() {
+	 User=InfoDataBase.getUser();
+	 Password=InfoDataBase.getPassword();
+	 Port=InfoDataBase.getPort();
+	 URL=InfoDataBase.getURL();
 	 
 	}
-
-
 }

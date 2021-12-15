@@ -30,20 +30,18 @@ public class Export extends SchemaName implements ManagingDatabase {
             
             Boolean includeHeaders = true;
             Statement stmt = connection.createStatement();
-            ResultSet myResultSet = stmt.executeQuery("SELECT * FROM "+getGetName()+"."+table);
+            ResultSet myResultSet = stmt.executeQuery("SELECT * FROM "+getSchemaName()+"."+table);
 
             writer.writeAll(myResultSet, includeHeaders);
             
             writer.close();
-            logger.logInfo("CSV File for table "+ table +" is created successfully.");
-            System.out.println("CSV File for table "+ table +" is created successfully.");
+            logger.logInfo("CSV File For Table "+ table +" Is Created Successfully.");
+            System.out.println("CSV File For Table "+ table +" Is Created Successfully.");
         } catch (Exception e) {
             logger.logError(e.getMessage());
             e.printStackTrace();
-
         }
     }
-
 
     public void ManagingTable(Connection databaseConnection) {
         exportData(databaseConnection);

@@ -7,8 +7,8 @@ import export.*;
 
 public class factoryManaging {
 
-    public ManagingDatabase tables(String nametable){
-        switch(nametable){
+    public ManagingDatabase Data(String Operation){
+        switch(Operation){
             case "ReadSchema":
                 return new ReadSchema();
             case "InsertData":

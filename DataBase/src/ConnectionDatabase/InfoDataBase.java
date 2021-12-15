@@ -2,48 +2,48 @@ package ConnectionDatabase;
 
 public class InfoDataBase {
 	
-	private static String root;
-	private static String pass;
-	private static String localhost;
-	private static int port;
+	private static String User;
+	private static String Password;
+	private static String URL;
+	private static int Port;
 	
 	 public InfoDataBase()
 	 {
 		 super();
 	 }
-	 public InfoDataBase(String root,String pass,String localhost,int port)
+	 public InfoDataBase(String User,String Password,String URL,int Port)
 	 {
-		 setRoot(root);
-		 setPass(pass);
-		 setLocalhost(localhost);
-		 setPort(port);
+		 setUser(User);
+		 setPassword(Password);
+		 setURL(URL);
+		 setPort(Port);
 	 }
-	public static String getPass() {
-		return pass;
+	public static String getPassword() {
+		return Password;
 	}
-	public static void setPass(String pass) {
+	public static void setPassword(String Password) {
 		
-		InfoDataBase.pass = pass;
+		InfoDataBase.Password = Password;
 	}
-	public static String getRoot() {
+	public static String getUser() {
 
-		return root;
+		return User;
 	}
-	public static void setRoot(String root) {
-		InfoDataBase.root = root;
+	public static void setUser(String User) {
+		InfoDataBase.User = User;
 	}
 	public static int getPort() {
-		return port;
+		return Port;
 	}
-	public static void setPort(int port) {
-		InfoDataBase.port = port;
+	public static void setPort(int Port) {
+		InfoDataBase.Port = Port;
 	}
-	public static String getLocalhost() {
+	public static String getURL() {
 
-		return localhost;
+		return URL;
 	}
-	public static void setLocalhost(String localhost) {
-		InfoDataBase.localhost = localhost;
+	public static void setURL(String URL) {
+		InfoDataBase.URL = URL;
 	}
 
 }
