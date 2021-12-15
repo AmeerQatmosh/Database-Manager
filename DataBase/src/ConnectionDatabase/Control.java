@@ -108,6 +108,7 @@ public class Control {
 						  System.out.println("Insert data : 2");
 						  System.out.println("DeleteData : 3");
 						  System.out.println("DropTable : 4");
+						  System.out.println("ExportTable : 5");
 						  System.out.println("LogOut : 0");
 						  Option2 = sc.nextInt();
 				  }
