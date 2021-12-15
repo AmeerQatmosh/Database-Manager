@@ -9,10 +9,10 @@ import java.sql.SQLException;
 
 public class StoreInfoDBs {
 //	private String email  ; 
-	private static String root = InfoDataBase.getRoot();
-	 private static String password =InfoDataBase.getPass() ;
+	private static String root = InfoDataBase.getUser();
+	 private static String password =InfoDataBase.getPassword() ;
 	 private static int port=InfoDataBase.getPort();
-	 private static String locahost=InfoDataBase.getLocalhost();
+	 private static String locahost=InfoDataBase.getURL();
 	 static String user_id = logIn.inpID;
 	public static void StoreInfoDB (Connection db) {
 

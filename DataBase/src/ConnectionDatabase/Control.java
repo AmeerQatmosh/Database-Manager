@@ -57,12 +57,12 @@ public class Control {
 		Scanner option= new Scanner(System.in);
 		int x1  = option.nextInt();
 		factoryManaging factoryManaging = new factoryManaging();
-		ManagingDatabase Table = factoryManaging.tables("ReadTable");
-		ManagingDatabase Schema = factoryManaging.tables("ReadSchema");
-		ManagingDatabase Drop = factoryManaging.tables("DeleteTable");
-		ManagingDatabase Delete = factoryManaging.tables("DeleteData");
-		ManagingDatabase Insert = factoryManaging.tables("InsertData");
-		ManagingDatabase Export = factoryManaging.tables("ExportData");
+		ManagingDatabase Table = factoryManaging.Data("ReadTable");
+		ManagingDatabase Schema = factoryManaging.Data("ReadSchema");
+		ManagingDatabase Drop = factoryManaging.Data("DeleteTable");
+		ManagingDatabase Delete = factoryManaging.Data("DeleteData");
+		ManagingDatabase Insert = factoryManaging.Data("InsertData");
+		ManagingDatabase Export = factoryManaging.Data("ExportData");
 		while (x1!= 0) {
 			switch(x1) {
 			  case 1:

@@ -30,7 +30,7 @@ public class Export extends SchemaName implements ManagingDatabase {
             
             Boolean includeHeaders = true;
             Statement stmt = connection.createStatement();
-            ResultSet myResultSet = stmt.executeQuery("SELECT * FROM "+getGetName()+"."+table);
+            ResultSet myResultSet = stmt.executeQuery("SELECT * FROM "+getSchemaName()+"."+table);
 
             writer.writeAll(myResultSet, includeHeaders);
             
