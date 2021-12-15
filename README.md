@@ -52,7 +52,13 @@ All users should authenticate themself before accessing Application, each user s
 The application uses a Factory method which deal with the problem of creating objects without having to specify the exact class of the object that will be created, factory method used to deal with Managing Database objects (ReadSchema, InsertData, ReadTable, DeleteTable, DeleteData, ExportData).
 
 ## 4. Logger ## 
+
+The application use a logger to record every action that happens in the application.
+
 ## 5. Exception handling ## 
+
+The code use exception handling properly, in the whole application.
+
 ## 6. Concrete architecture ##
 
 
