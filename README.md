@@ -26,7 +26,7 @@ SQL files.
 
 
 
-### 2.6. User authentication and authorization ###
+###            2.6. User authentication and authorization ###
 
 All users should authenticate themself before accessing Application, each user should be able to access to the database manager based on their permissions:
 a. Admin: Full permission
