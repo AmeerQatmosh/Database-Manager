@@ -62,6 +62,7 @@ public class Control {
 		ManagingDatabase Drop = factoryManaging.tables("DeleteTable");
 		ManagingDatabase Delete = factoryManaging.tables("DeleteData");
 		ManagingDatabase Insert = factoryManaging.tables("InsertData");
+		ManagingDatabase Export = factoryManaging.tables("ExportData");
 		while (x1!= 0) {
 			switch(x1) {
 			  case 1:
@@ -77,36 +78,41 @@ public class Control {
 				  System.out.println("Insert data : 2");
 				  System.out.println("DeleteData : 3");
 				  System.out.println("DropTable : 4");
+				  System.out.println("ExportTable : 5");
 				  System.out.println("Log out : 0");
 				  Scanner option2= new Scanner(System.in);
 				  int x2 = option.nextInt();
 				  
 				  while(x2!=0) {
 					  switch(x2) {
-					  case 1:			  
-						  Table.ManagingTable(db);
-						  break;
-					  case 2 :
-						  Insert.ManagingTable(db);
-						  break ;
-					  case 3 : 
-						  Delete.ManagingTable(db);
-						  break ;
-					  case 4 :  
-						  Drop.ManagingTable(db);
-					  case 0:
-						  logger.logInfo("User Signed-Out from sys");
-						  break;
-					  default:
-						  logger.logWarning("User's Input Incorrect");
-						  System.out.println("Incorrect input ... ");
-					  }
-					  System.out.println("ReadTable : 1");
-					  System.out.println("Insert data : 2");
-					  System.out.println("DeleteData : 3");
-					  System.out.println("DropTable : 4");
-					  System.out.println("Log out : 0");
-					  x2 = option.nextInt();
+						  case 1:
+							  Table.ManagingTable(db);
+							  break;
+						  case 2 :
+							  Insert.ManagingTable(db);
+							  break;
+						  case 3 :
+							  Delete.ManagingTable(db);
+							  break;
+						  case 4 :
+							  Drop.ManagingTable(db);
+							  break;
+						  case 5:
+							  Export.ManagingTable(db);
+							  break;
+					  	case 0:
+							  logger.logInfo("User Signed-Out from sys");
+							  break;
+						  default:
+							  logger.logWarning("User's Input Incorrect");
+							  System.out.println("Incorrect input ... ");
+						  }
+						  System.out.println("ReadTable : 1");
+						  System.out.println("Insert data : 2");
+						  System.out.println("DeleteData : 3");
+						  System.out.println("DropTable : 4");
+						  System.out.println("Log out : 0");
+						  x2 = option.nextInt();
 				  }
 				  
 				

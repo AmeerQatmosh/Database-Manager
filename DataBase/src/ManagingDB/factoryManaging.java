@@ -3,6 +3,7 @@ package ManagingDB;
 import Delete.*;
 import Read.*;
 import insert.*;
+import export.*;
 
 public class factoryManaging {
 
@@ -18,6 +19,8 @@ public class factoryManaging {
                 return new DeleteTable();
             case "DeleteData":
                 return new DeleteData();
+            case "ExportData":
+                return new Export();
 
         }
         return null;
