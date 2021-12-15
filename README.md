@@ -1,3 +1,2 @@
-# Database Manager Java Application
-#              Report
-# 1. Introduction
+# Database Manager Java Application Report
+## 1. Introduction
