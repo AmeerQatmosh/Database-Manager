@@ -1,5 +1,6 @@
 package export;
 
+import ManagingDB.ManagingDatabase;
 import ManagingDB.SchemaName;
 import com.opencsv.CSVWriter;
 import logger.logger;
@@ -11,7 +12,7 @@ import java.sql.Statement;
 import java.util.Date;
 import java.util.Scanner;
 
-public class Export extends SchemaName {
+public class Export extends SchemaName implements ManagingDatabase {
 
     public static void exportData(Connection connection){
         try {
@@ -41,5 +42,10 @@ public class Export extends SchemaName {
             e.printStackTrace();
 
         }
+    }
+
+
+    public void ManagingTable(Connection databaseConnection) {
+        exportData(databaseConnection);
     }
 }
