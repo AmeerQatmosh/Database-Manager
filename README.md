@@ -23,3 +23,10 @@ In this feature, the user shall be able to export files containing data, schema,
 SQL files.
 
 ### 2.5 User authentication and authorization 
+
+All users should authenticate themself before accessing Application.
+
+Each user should be able to access to the database manager based on their permissions:
+a. Admin: Full permission
+b. Staff: Read/Write but can’t delete tables.
+c. Reader: Read only.
