@@ -6,8 +6,6 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.util.Scanner;
 
-//import com.mysql.cj.xdevapi.Statement;
-
 public class logIn {
 
 	public static String inpID ;

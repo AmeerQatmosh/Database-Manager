@@ -15,6 +15,7 @@ public class mysql {
 	catch(Exception e){
 		logger.logError(e.getMessage());
 		System.out.println(e);
+		
 	}
 		return null ;
 	}

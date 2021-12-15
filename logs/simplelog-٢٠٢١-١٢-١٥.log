@@ -1,0 +1,70 @@
+[Info]id 1
+[Info]id 44
+[Info]name zaid
+[Info]password 78
+[Info]Type 1
+[Error]sqlinsert into user (id,name,password,type) VALUES (?,?,? ,?)
+[Error]pscom.mysql.cj.jdbc.ClientPreparedStatement: insert into user (id,name,password,type) VALUES (** NOT SPECIFIED **,** NOT SPECIFIED **,** NOT SPECIFIED ** ,** NOT SPECIFIED **)
+[User ID]1[Info]Log-in into system Successfully
+[User ID]1[Info]All Schema Showed Successfully
+[User ID]1[Info]Schema mydb Selected Successfully
+[User ID]1[Info]Inserted Into user Successfully
+[User ID]1[Info]Table user Selected To Show Successfully
+[User ID]1[Info]All user Data Showed Successfully
+[User ID]1[Info]User Closed the sys
+[User ID]1[Info]Log-in into system Successfully
+[User ID]1[Info]All Schema Showed Successfully
+[User ID]1[Info]Schema mydb Selected Successfully
+[User ID]1[Info]User Closed the sys
+[User ID]2[Warning]Log-in into system Failed
+[User ID]2[Info]Log-in into system Successfully
+[User ID]2[Info]All Schema Showed Successfully
+[User ID]2[Info]Schema mydb Selected Successfully
+[User ID]2[Info]User Closed the sys
+[User ID] 2 [Info] Wed Dec 15 01:40:37 IST 2021  Log-in into system Successfully
+[User ID] 2 [Info] Wed Dec 15 01:40:51 IST 2021  All Schema Showed Successfully
+[User ID] 2 [Info] Wed Dec 15 01:40:56 IST 2021  Schema mydb Selected Successfully
+[User ID] 2 [Info] Wed Dec 15 01:41:00 IST 2021  User Closed the sys
+[User ID] 2 [Info] ( Wed Dec 15 01:50:41 IST 2021 )  Log-in into system Successfully
+[User ID] 2 [Info] ( Wed Dec 15 01:50:59 IST 2021 )  All Schema Showed Successfully
+[User ID] 2 [Info] ( Wed Dec 15 01:51:02 IST 2021 )  Schema mydb Selected Successfully
+[User ID] 2 [Info] ( Wed Dec 15 01:51:20 IST 2021 )  Table user Selected To Show Successfully
+[User ID] 2 [Info] ( Wed Dec 15 01:51:20 IST 2021 )  All user Data Showed Successfully
+[User ID] 2 [Info] ( Wed Dec 15 01:51:55 IST 2021 )  User Signed-Out from sys
+[User ID] 2 [Info] ( Wed Dec 15 01:51:57 IST 2021 )  User Closed the sys
+[User ID 2] [Info] ( Wed Dec 15 01:54:33 IST 2021 )  Log-in into system Successfully
+[User ID 2] [Error] ( Wed Dec 15 01:54:49 IST 2021 )  Access denied for user 'root'@'localhost' (using password: YES)
+[User ID 2] [Info] ( Wed Dec 15 01:54:49 IST 2021 )  All Schema Showed Successfully
+[User ID 1] [Info] ( Wed Dec 15 02:19:12 IST 2021 )  Log-in into system Successfully
+[User ID 1] [Info] ( Wed Dec 15 02:28:18 IST 2021 )  Log-in into system Successfully
+[User ID 1] [Info] ( Wed Dec 15 02:28:53 IST 2021 )  All Schema Showed Successfully
+[User ID 1] [Info] ( Wed Dec 15 02:29:16 IST 2021 )  Schema mydb Selected Successfully
+[User ID 1] [Info] ( Wed Dec 15 02:29:22 IST 2021 )  Table user Selected To Show Successfully
+[User ID 1] [Info] ( Wed Dec 15 02:29:22 IST 2021 )  All user Data Showed Successfully
+[User ID 1] [Info] ( Wed Dec 15 02:45:41 IST 2021 )  Log-in into system Successfully
+[User ID 1] [Info] ( Wed Dec 15 02:46:01 IST 2021 )  All Schema Showed Successfully
+[User ID 1] [Info] ( Wed Dec 15 02:47:10 IST 2021 )  Log-in into system Successfully
+[User ID 1] [Info] ( Wed Dec 15 02:47:29 IST 2021 )  All Schema Showed Successfully
+[User ID 1] [Info] ( Wed Dec 15 02:59:00 IST 2021 )  Log-in into system Successfully
+[User ID 1] [Info] ( Wed Dec 15 02:59:14 IST 2021 )  All Schema Showed Successfully
+[User ID 1] [Info] ( Wed Dec 15 03:00:45 IST 2021 )  Log-in into system Successfully
+[User ID 1] [Info] ( Wed Dec 15 03:01:04 IST 2021 )  All Schema Showed Successfully
+[User ID 1] [Info] ( Wed Dec 15 03:05:35 IST 2021 )  Log-in into system Successfully
+[User ID 1] [Info] ( Wed Dec 15 03:05:51 IST 2021 )  All Schema Showed Successfully
+[User ID 1] [Info] ( Wed Dec 15 03:09:12 IST 2021 )  Log-in into system Successfully
+[User ID 1] [Info] ( Wed Dec 15 03:09:33 IST 2021 )  All Schema Showed Successfully
+[User ID 1] [Info] ( Wed Dec 15 03:14:33 IST 2021 )  Log-in into system Successfully
+[User ID 1] [Info] ( Wed Dec 15 03:14:54 IST 2021 )  All Schema Showed Successfully
+[User ID 1] [Info] ( Wed Dec 15 03:16:45 IST 2021 )  Log-in into system Successfully
+[User ID 1] [Info] ( Wed Dec 15 03:17:09 IST 2021 )  All Schema Showed Successfully
+[User ID 8] [Warning] ( Wed Dec 15 03:19:46 IST 2021 )  Log-in into system Failed
+[User ID 8] [Info] ( Wed Dec 15 03:24:07 IST 2021 )  Log-in into system Successfully
+[User ID 8] [Info] ( Wed Dec 15 03:24:22 IST 2021 )  All Schema Showed Successfully
+[User ID 1] [Info] ( Wed Dec 15 03:31:09 IST 2021 )  Log-in into system Successfully
+[User ID 1] [Info] ( Wed Dec 15 03:31:23 IST 2021 )  All Schema Showed Successfully
+[User ID 1] [Info] ( Wed Dec 15 03:31:41 IST 2021 )  Schema mydb Selected Successfully
+[User ID 1] [Info] ( Wed Dec 15 03:31:58 IST 2021 )  Table user Selected To Show Successfully
+[User ID 1] [Info] ( Wed Dec 15 03:31:58 IST 2021 )  All user Data Showed Successfully
+[User ID 1] [Info] ( Wed Dec 15 03:32:01 IST 2021 )  User Closed the sys
+[User ID 1] [Info] ( Wed Dec 15 03:32:39 IST 2021 )  Log-in into system Successfully
+[User ID 1] [Error] ( Wed Dec 15 03:32:56 IST 2021 )  Access denied for user 'root'@'localhost' (using password: YES)

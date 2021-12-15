@@ -1,5 +1,6 @@
 package logger;
 import java.util.Calendar;
+import java.util.Date;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -61,8 +62,9 @@ public final  class logger {
 
 		public static void logInfo(String message){
 			try{
+				Date date = new Date(); 
 				FileWriter out = new FileWriter(logger.logFile, true);
-				out.write("[User ID]"+logIn.inpID+"[Info]"+message+"\n");
+				out.write("[User ID "+logIn.inpID+"] [Info] ( "+date.toString()+" )  "+message+"\n");
 				out.close();
 			}catch(IOException e){
 				System.err.println("ERROR: Could not write to log file");
@@ -71,8 +73,9 @@ public final  class logger {
 		
 		public static void logError(String message){
 			try{
+				Date date = new Date();
 				FileWriter out = new FileWriter(logger.logFile, true);
-				out.write("[User ID]"+logIn.inpID+"[Error]"+message+"\n");
+				out.write("[User ID "+logIn.inpID+"] [Error] ( "+date.toString()+" )  "+message+"\n");
 				out.close();
 			}catch(IOException e){
 				System.err.println("ERROR: Could not write to log file");
@@ -81,8 +84,9 @@ public final  class logger {
 		
 		public static void logDebug(String message){
 			try{
+				Date date = new Date();
 				FileWriter out = new FileWriter(logger.logFile, true);
-				out.write("[User ID]"+logIn.inpID+"[Debug]"+message+"\n");
+				out.write("[User ID "+logIn.inpID+"] [Debug] ( "+date.toString()+" )  "+message+"\n");
 				out.close();
 			}catch(IOException e){
 				System.err.println("ERROR: Could not write to log file");
@@ -91,8 +95,9 @@ public final  class logger {
 		
 		public static void logWarning(String message){
 			try{
+				Date date = new Date();
 				FileWriter out = new FileWriter(logger.logFile, true);
-				out.write("[User ID]"+logIn.inpID+"[Warning]"+message+"\n");
+				out.write("[User ID "+logIn.inpID+"] [Warning] ( " +date.toString()+" )  "+message+"\n");
 				out.close();
 			}catch(IOException e){
 				System.err.println("ERROR: Could not write to log file");

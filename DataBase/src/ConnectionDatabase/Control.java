@@ -1,6 +1,7 @@
 package ConnectionDatabase;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.Scanner;
 
 import Delete.DeleteData;
@@ -16,7 +17,7 @@ import signUp.*;
 
 public class Control {
 	
-	   private static  void connectionDataBase()
+	   private static  Connection connectionDataBase()
 	   {
 		   Scanner dbinfo= new Scanner(System.in);
 			System.out.println("enter the data base infromation you need to connection with : ");
@@ -34,14 +35,29 @@ public class Control {
 						 pass, 
 						 localhost,
 						 port);
+			  
+//			ConnectionDatabase rs = new ConnectionDatabase();
+//			 rs.getConnection();
+//			
+			  
+			  try {
+				 
+				  return ConnectionDatabase.getConnection();
+			  }
+			  catch(Exception e){
+				  System.out.print(e.getMessage());
+				   
 
-			ConnectionDatabase rs = new ConnectionDatabase();
-			rs.getConnection();
-
-			
+				    logger.logError(e.getMessage());
+					e.printStackTrace();
+			  }
+			  
+			return null;
+//			return DB ;
 	   }
 	public static void main(String args[])
 	{
+		
 		System.out.println("Connection DataBase");
 		mysql x = new mysql ();
 		Connection MySQL  = x.getconnectio();
@@ -64,9 +80,9 @@ public class Control {
 			  case 2:
 			  int Type = logIn.logIn(MySQL);
 			  if (Type == 0) {
-				  connectionDataBase();
+				  Connection db = connectionDataBase();
 				  StoreInfoDBs.StoreInfoDB(MySQL);
-				  Schema.ManagingTable(MySQL);
+				  Schema.ManagingTable(db);
 				  System.out.println("ReadTable : 1");
 				  System.out.println("Insert data : 2");
 				  System.out.println("DeleteData : 3");
@@ -78,16 +94,16 @@ public class Control {
 				  while(x2!=0) {
 					  switch(x2) {
 					  case 1:			  
-						  Table.ManagingTable(MySQL);
+						  Table.ManagingTable(db);
 						  break;
 					  case 2 :
-						  Insert.ManagingTable(MySQL);
+						  Insert.ManagingTable(db);
 						  break ;
 					  case 3 : 
-						  Delete.ManagingTable(MySQL);
+						  Delete.ManagingTable(db);
 						  break ;
 					  case 4 :  
-						  Drop.ManagingTable(MySQL);
+						  Drop.ManagingTable(db);
 					  case 0:
 						  logger.logInfo("User Signed-Out from sys");
 						  break;
@@ -103,13 +119,12 @@ public class Control {
 					  x2 = option.nextInt();
 				  }
 				  
-				  
 				
 			  }
 			  else if (Type == 1) {
-				  connectionDataBase();
+				  Connection db=  connectionDataBase();
 				  StoreInfoDBs.StoreInfoDB(MySQL);
-				  Schema.ManagingTable(MySQL);
+				  Schema.ManagingTable(db);
 				  
 				  System.out.println("ReadTable : 1");
 				  System.out.println("Insert data : 2");
@@ -120,10 +135,10 @@ public class Control {
 				  while(x2!=0) {
 					  switch(x2) {
 					  case 1:			  
-						  Table.ManagingTable(MySQL);
+						  Table.ManagingTable(db);
 						  break;
 					  case 2 :
-						  Insert.ManagingTable(MySQL);
+						  Insert.ManagingTable(db);
 						  break ;
 					  case 0:
 						  logger.logInfo("User Signed-Out from sys");
@@ -140,9 +155,9 @@ public class Control {
 
 			  }
 			  else if (Type == 2) {
-				  connectionDataBase();
+				  Connection db = connectionDataBase();
 				  StoreInfoDBs.StoreInfoDB(MySQL);
-				  Schema.ManagingTable(MySQL);
+				  Schema.ManagingTable(db);
 				  
 				  System.out.println("ReadTable : 1");
 				  System.out.println("Log out : 0");
@@ -152,10 +167,10 @@ public class Control {
 				  while(x2!=0) {
 					  switch(x2) {
 					  case 1:			  
-						  Table.ManagingTable(MySQL);
+						  Table.ManagingTable(db);
 						  break;
 					  case 0:
-						  logger.logInfo("User Signed-Out from sys");
+						  
 						  break;
 					  default:
 						  logger.logWarning("User's Input Incorrect");
@@ -165,7 +180,7 @@ public class Control {
 					  System.out.println("Log out : 0");
 					  x2 = option.nextInt();
 				  }
-				  
+				  logger.logInfo("User Signed-Out from sys");
 
 			  }
 			  else if (Type == 3) {
@@ -186,6 +201,7 @@ public class Control {
 		}
 		logger.logInfo("User Closed the sys");
 		System.out.println("Exist ...");
+//		mysql.close();
 	
 	}
 }
