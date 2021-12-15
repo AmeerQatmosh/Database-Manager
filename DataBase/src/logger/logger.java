@@ -25,7 +25,6 @@ public final  class logger {
 		}
 
 		public void createLogFile(){
-			//Determine if a logs directory exists or not.
 			File logsFolder = new File(env + '/' + "logs");
 			if(!logsFolder.exists()){
 				//Create the directory 

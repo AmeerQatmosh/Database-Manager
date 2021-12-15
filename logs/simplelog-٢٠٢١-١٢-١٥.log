@@ -68,3 +68,13 @@
 [User ID 1] [Info] ( Wed Dec 15 03:32:01 IST 2021 )  User Closed the sys
 [User ID 1] [Info] ( Wed Dec 15 03:32:39 IST 2021 )  Log-in into system Successfully
 [User ID 1] [Error] ( Wed Dec 15 03:32:56 IST 2021 )  Access denied for user 'root'@'localhost' (using password: YES)
+[User ID null] [Warning] ( Wed Dec 15 04:21:47 IST 2021 )  Log-in into system Failed
+[User ID null] [Warning] ( Wed Dec 15 04:22:20 IST 2021 )  Log-in into system Failed
+[User ID null] [Warning] ( Wed Dec 15 04:29:04 IST 2021 )  Sign-Up Into System Failed
+[User ID null] [Info] ( Wed Dec 15 04:29:10 IST 2021 )  User Closed the sys
+[User ID 1] [Info] ( Wed Dec 15 04:29:22 IST 2021 )  Log-in into system Successfully
+[User ID 1] [Error] ( Wed Dec 15 04:29:39 IST 2021 )  Communications link failure
+
+The last packet sent successfully to the server was ? milliseconds ago. The driver has not received any packets from the server.
+[User ID 1] [Info] ( Wed Dec 15 04:37:30 IST 2021 )  Log-in into system Successfully
+[User ID 1] [Error] ( Wed Dec 15 04:37:45 IST 2021 )  Access denied for user 'root'@'localhost' (using password: YES)

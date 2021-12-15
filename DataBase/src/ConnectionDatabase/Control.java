@@ -71,7 +71,10 @@ public class Control {
 			  int Type = logIn.logIn(MySQL);
 			  if (Type == 0) {
 				  Connection db = connectionDataBase();
-				  StoreInfoDBs.StoreInfoDB(MySQL);
+				  if(db != null) 
+					  StoreInfoDBs.StoreInfoDB(MySQL);
+				  
+				  
 				  Schema.ManagingTable(db);
 				  System.out.println("ReadTable : 1");
 				  System.out.println("Insert data : 2");
@@ -80,7 +83,6 @@ public class Control {
 				  System.out.println("Log out : 0");
 				  Scanner option2= new Scanner(System.in);
 				  int x2 = option.nextInt();
-				  
 				  while(x2!=0) {
 					  switch(x2) {
 					  case 1:			  
@@ -108,8 +110,6 @@ public class Control {
 					  System.out.println("Log out : 0");
 					  x2 = option.nextInt();
 				  }
-				  
-				
 			  }
 			  else if (Type == 1) {
 				  Connection db=  connectionDataBase();
@@ -142,25 +142,21 @@ public class Control {
 					  System.out.println("Log out : 0");
 					  x2 = option.nextInt();
 				  } 
-
 			  }
 			  else if (Type == 2) {
 				  Connection db = connectionDataBase();
 				  StoreInfoDBs.StoreInfoDB(MySQL);
 				  Schema.ManagingTable(db);
-				  
 				  System.out.println("ReadTable : 1");
 				  System.out.println("Log out : 0");
 				  Scanner option2= new Scanner(System.in);
 				  int x2 = option.nextInt();
-				  
 				  while(x2!=0) {
 					  switch(x2) {
 					  case 1:			  
 						  Table.ManagingTable(db);
 						  break;
-					  case 0:
-						  
+					  case 0:  
 						  break;
 					  default:
 						  logger.logWarning("User's Input Incorrect");
@@ -171,7 +167,6 @@ public class Control {
 					  x2 = option.nextInt();
 				  }
 				  logger.logInfo("User Signed-Out from sys");
-
 			  }
 			  else if (Type == 3) {
 				  System.out.println("Incorrect password or id");
@@ -191,7 +186,6 @@ public class Control {
 		}
 		logger.logInfo("User Closed the sys");
 		System.out.println("Exist ...");
-//		mysql.close();
 	
 	}
 }

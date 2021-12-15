@@ -2,7 +2,9 @@ package signUp;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.Scanner;
 
 import logger.logger;
@@ -15,7 +17,21 @@ public class signUp {
 		Scanner in= new Scanner(System.in);
 		System.out.print("enter ID :");
 		ID = in.nextLine();
-
+		 try {
+	    	  Statement statement= db.createStatement();  
+	    	  ResultSet resultSet= statement.executeQuery("select * from user");  
+	    	  while(resultSet.next())
+	    	  {
+	    		  if(resultSet.getString(1).equals(ID)) {
+	    			  logger.logWarning("Sign-Up Into System Failed");
+	    			  System.out.println("The ID already exitsed , Try another one");
+	    			  return ;
+	    		  }
+	    	  }
+		} catch (Exception e) {
+			  logger.logError(e.getMessage());
+			  System.out.print(e.getMessage());
+		}
 		System.out.print("enter name :");
 		Name = in.nextLine();
 
