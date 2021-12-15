@@ -19,23 +19,22 @@ public class Control {
 	
 	   private static  Connection connectionDataBase()
 	   {
-		   Scanner dbinfo= new Scanner(System.in);
-			System.out.println("enter the data base infromation you need to connection with : ");
-			System.out.println("enter root : ");
-		   	 String root= dbinfo.nextLine();
-		   	System.out.println("enter password : ");
-		 	  String pass=dbinfo.nextLine();
-		 	 System.out.println("enter localhost : ");
-			  String localhost=dbinfo.nextLine();
-			  System.out.println("enter port number : ");
-			  int port=dbinfo.nextInt();
+		   Scanner sc= new Scanner(System.in);
+			System.out.println("Enter The Data Base Information You Need To Connect With : ");
+			System.out.println("Enter User : ");
+		   	 String User= sc.nextLine();
+		   	System.out.println("Enter Password : ");
+		 	  String Password=sc.nextLine();
+		 	 System.out.println("Enter URL : ");
+			  String URL=sc.nextLine();
+			  System.out.println("Enter Port number : ");
+			  int Port=sc.nextInt();
 			  
-			  InfoDataBase x = new InfoDataBase(
-						 root,
-						 pass, 
-						 localhost,
-						 port);
-			  			  
+			  InfoDataBase info = new InfoDataBase(
+						 User,
+						 Password, 
+						 URL,
+						 Port);
 			  try {
 				  return ConnectionDatabase.getConnection();
 			  }
@@ -47,15 +46,14 @@ public class Control {
 	   }
 	public static void main(String args[])
 	{
-		
 		System.out.println("Connection DataBase");
-		mysql x = new mysql ();
-		Connection MySQL  = x.getconnectio();
-		System.out.println("sign up : 1");
-		System.out.println("log in : 2");
-		System.out.println("exist : 0");
-		Scanner option= new Scanner(System.in);
-		int x1  = option.nextInt();
+		mysql sql = new mysql ();
+		Connection connectionMySQL  = sql.getConnection();
+		System.out.println("Sign Up : 1");
+		System.out.println("Log In : 2");
+		System.out.println("Exit : 0");
+		Scanner sc= new Scanner(System.in);
+		int Option1  = sc.nextInt();
 		factoryManaging factoryManaging = new factoryManaging();
 		ManagingDatabase Table = factoryManaging.Data("ReadTable");
 		ManagingDatabase Schema = factoryManaging.Data("ReadSchema");
@@ -63,47 +61,44 @@ public class Control {
 		ManagingDatabase Delete = factoryManaging.Data("DeleteData");
 		ManagingDatabase Insert = factoryManaging.Data("InsertData");
 		ManagingDatabase Export = factoryManaging.Data("ExportData");
-		while (x1!= 0) {
-			switch(x1) {
+		while (Option1!= 0) {
+			switch(Option1) {
 			  case 1:
-			 signUp.signup(MySQL);
+			 signUp.signup(connectionMySQL);
 			    break;
 			  case 2:
-			  int Type = logIn.logIn(MySQL);
-			  if (Type == 0) {
-				  Connection db = connectionDataBase();
-				  if(db != null) 
-					  StoreInfoDBs.StoreInfoDB(MySQL);
-				  
-				  
-				  Schema.ManagingTable(db);
+			  int UserType = logIn.logIn(connectionMySQL);
+			  if (UserType == 0) {
+				  Connection connection = connectionDataBase();
+				  if(connection != null) 
+					  StoreInfoDBs.StoreInfoDB(connectionMySQL);
+				  Schema.ManagingTable(connection);
 				  System.out.println("ReadTable : 1");
 				  System.out.println("Insert data : 2");
 				  System.out.println("DeleteData : 3");
 				  System.out.println("DropTable : 4");
 				  System.out.println("ExportTable : 5");
-				  System.out.println("Log out : 0");
-				  Scanner option2= new Scanner(System.in);
-				  int x2 = option.nextInt();
-				  while(x2!=0) {
-					  switch(x2) {
+				  System.out.println("LogOut : 0");
+				  int Option2 = sc.nextInt();
+				  while(Option2!=0) {
+					  switch(Option2) {
 						  case 1:
-							  Table.ManagingTable(db);
+							  Table.ManagingTable(connection);
 							  break;
 						  case 2 :
-							  Insert.ManagingTable(db);
+							  Insert.ManagingTable(connection);
 							  break;
 						  case 3 :
-							  Delete.ManagingTable(db);
+							  Delete.ManagingTable(connection);
 							  break;
 						  case 4 :
-							  Drop.ManagingTable(db);
+							  Drop.ManagingTable(connection);
 							  break;
 						  case 5:
-							  Export.ManagingTable(db);
+							  Export.ManagingTable(connection);
 							  break;
 					  	case 0:
-							  logger.logInfo("User Signed-Out from sys");
+							  logger.logInfo("User Signed-Out From System");
 							  break;
 						  default:
 							  logger.logWarning("User's Input Incorrect");
@@ -113,85 +108,80 @@ public class Control {
 						  System.out.println("Insert data : 2");
 						  System.out.println("DeleteData : 3");
 						  System.out.println("DropTable : 4");
-						  System.out.println("Log out : 0");
-						  x2 = option.nextInt();
+						  System.out.println("LogOut : 0");
+						  Option2 = sc.nextInt();
 				  }
 			  }
-			  else if (Type == 1) {
-				  Connection db=  connectionDataBase();
-				  StoreInfoDBs.StoreInfoDB(MySQL);
-				  Schema.ManagingTable(db);
-				  
+			  else if (UserType == 1) {
+				  Connection connection=  connectionDataBase();
+				  StoreInfoDBs.StoreInfoDB(connectionMySQL);
+				  Schema.ManagingTable(connection);
+
 				  System.out.println("ReadTable : 1");
 				  System.out.println("Insert data : 2");
-				  System.out.println("Log out : 0");
-				  Scanner option2= new Scanner(System.in);
-				  int x2 = option.nextInt();
-				  
-				  while(x2!=0) {
-					  switch(x2) {
+				  System.out.println("LogOut : 0");
+				  int Option2 = sc.nextInt();
+				  while(Option2!=0) {
+					  switch(Option2) {
 					  case 1:			  
-						  Table.ManagingTable(db);
+						  Table.ManagingTable(connection);
 						  break;
 					  case 2 :
-						  Insert.ManagingTable(db);
+						  Insert.ManagingTable(connection);
 						  break ;
 					  case 0:
-						  logger.logInfo("User Signed-Out from sys");
+						  logger.logInfo("User Signed-Out From System");
 						  break;
 					  default:
 						  logger.logWarning("User's Input Incorrect");
-						  System.out.println("Incorrect input ... ");
+						  System.out.println("Incorrect Input ... ");
 					  }
 					  System.out.println("ReadTable : 1");
 					  System.out.println("Insert data : 2");
-					  System.out.println("Log out : 0");
-					  x2 = option.nextInt();
+					  System.out.println("LogOut : 0");
+					  Option2 = sc.nextInt();
 				  } 
 			  }
-			  else if (Type == 2) {
-				  Connection db = connectionDataBase();
-				  StoreInfoDBs.StoreInfoDB(MySQL);
-				  Schema.ManagingTable(db);
+			  else if (UserType == 2) {
+				  Connection connection = connectionDataBase();
+				  StoreInfoDBs.StoreInfoDB(connectionMySQL);
+				  Schema.ManagingTable(connection);
 				  System.out.println("ReadTable : 1");
-				  System.out.println("Log out : 0");
-				  Scanner option2= new Scanner(System.in);
-				  int x2 = option.nextInt();
-				  while(x2!=0) {
-					  switch(x2) {
+				  System.out.println("LogOut : 0");
+				  int Option2 = sc.nextInt();
+				  while(Option2!=0) {
+					  switch(Option2) {
 					  case 1:			  
-						  Table.ManagingTable(db);
+						  Table.ManagingTable(connection);
 						  break;
 					  case 0:  
 						  break;
 					  default:
 						  logger.logWarning("User's Input Incorrect");
-						  System.out.println("Incorrect input ... ");
+						  System.out.println("Incorrect Input ... ");
 					  }
 					  System.out.println("ReadTable : 1");
-					  System.out.println("Log out : 0");
-					  x2 = option.nextInt();
+					  System.out.println("LogOut : 0");
+					  Option2 = sc.nextInt();
 				  }
-				  logger.logInfo("User Signed-Out from sys");
+				  logger.logInfo("User Signed-Out From Systemtem");
 			  }
-			  else if (Type == 3) {
-				  System.out.println("Incorrect password or id");
+			  else if (UserType == 3) {
+				  System.out.println("Incorrect Password Or ID");
 				  break;
 			  }
 				case 0:
 				  break;
 			  default:
 				  logger.logWarning("User's Input Incorrect");
-				  System.out.println("Incorrect input ... ");
+				  System.out.println("Incorrect Input ... ");
 			}
-			System.out.println("sign up : 1");
+			System.out.println("Sign up : 1");
 			System.out.println("log in : 2");
-			System.out.println("exist : 0");
-			x1  = option.nextInt();
-
+			System.out.println("Exit : 0");
+			Option1  = sc.nextInt();
 		}
 		logger.logInfo("User Closed the sys");
-		System.out.println("Exist ...");
-	
+		System.out.println("Exit ...");
 	}
 }

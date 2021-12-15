@@ -39,6 +39,4 @@ public class ConnectionDatabase {
 	 URL=InfoDataBase.getURL();
 	 
 	}
-
-
 }

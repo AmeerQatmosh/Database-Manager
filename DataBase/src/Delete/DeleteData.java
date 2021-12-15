@@ -2,9 +2,9 @@ package Delete;
 
 import ManagingDB.*;
 import logger.logger;
-
 import java.sql.*;
 import java.util.Scanner;
+
 public class DeleteData extends SchemaName implements ManagingDatabase {
     public static void deleteData(Connection connection) {
         try {
@@ -15,16 +15,13 @@ public class DeleteData extends SchemaName implements ManagingDatabase {
             System.out.println("Enter id To Delete");
             int id = sc.nextInt();
 
-            String sql = "DELETE FROM "+getGetName()+"."+table+" WHERE id = "+id;
-            PreparedStatement pstmt = connection.prepareStatement(sql); {
-
+            String sqlQuery = "DELETE FROM "+ getSchemaName() +"."+table+" WHERE id = "+id;
+            PreparedStatement pstmt = connection.prepareStatement(sqlQuery); {
                 // execute the delete statement
                 pstmt.executeUpdate();
                 logger.logInfo("Rows Deleted From "+ table +" Successfully");
-
             }
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
             logger.logError(e.getMessage());
             e.printStackTrace();
         }

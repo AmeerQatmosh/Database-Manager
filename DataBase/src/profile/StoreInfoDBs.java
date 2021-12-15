@@ -8,29 +8,27 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class StoreInfoDBs {
-//	private String email  ; 
-	private static String root = InfoDataBase.getUser();
-	 private static String password =InfoDataBase.getPassword() ;
-	 private static int port=InfoDataBase.getPort();
-	 private static String locahost=InfoDataBase.getURL();
-	 static String user_id = logIn.inpID;
-	public static void StoreInfoDB (Connection db) {
+	private static String User = InfoDataBase.getUser();
+	 private static String Password =InfoDataBase.getPassword() ;
+	 private static int Port=InfoDataBase.getPort();
+	 private static String URL=InfoDataBase.getURL();
+	 static String user_id = logIn.ID;
+	public static void StoreInfoDB (Connection connection) {
 
 		
 		try {
-			String sql = "insert into dbinformation (user_id,localHost,password,root,port) VALUES (?,?,? ,?,?)";
+			String sql = "insert into dbinformation (user_id,url,password,user,port) VALUES (?,?,? ,?,?)";
 
 			PreparedStatement ps;
-			ps = db.prepareStatement(sql);
-
-//			ps.setString(1, Email) ;
+			ps = connection.prepareStatement(sql);
+			
 			
 			ps.setString(1, user_id) ;		
-			ps.setString(2, locahost) ;
-			ps.setString(3, password) ;
-			ps.setString(4, root) ;
-			ps.setInt(5, port) ;
-			int row = ps.executeUpdate();
+			ps.setString(2, URL) ;
+			ps.setString(3, Password) ;
+			ps.setString(4, User) ;
+			ps.setInt(5, Port) ;
+			ps.executeUpdate();
 			
 		} catch (SQLException e) {
 			e.printStackTrace();

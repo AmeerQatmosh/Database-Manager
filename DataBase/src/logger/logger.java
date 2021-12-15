@@ -28,7 +28,7 @@ public final  class logger {
 			File logsFolder = new File(env + '/' + "logs");
 			if(!logsFolder.exists()){
 				//Create the directory 
-				System.err.println("INFO: Creating new logs directory in " + env);
+				System.err.println("INFO: Creating New Logs Directory In " + env);
 				logsFolder.mkdir();
 				
 			}
@@ -43,10 +43,10 @@ public final  class logger {
 			try{
 				if(logFile.createNewFile()){
 					//New file made
-					System.err.println("INFO: Creating new log file");	
+					System.err.println("INFO: Creating New Log File");
 				}
 			}catch(IOException e){
-				System.err.println("ERROR: Cannot create log file");
+				System.err.println("ERROR: Cannot Create Log File");
 				System.exit(1);
 			}
 		}
@@ -54,7 +54,7 @@ public final  class logger {
 		private logger(){
 			if (instance != null){
 				//Prevent Reflection
-				throw new IllegalStateException("Cannot instantiate a new singleton instance of log");
+				throw new IllegalStateException("Cannot Instantiate A New Singleton Instance Of Log");
 			}
 			this.createLogFile();
 		}
@@ -63,10 +63,10 @@ public final  class logger {
 			try{
 				Date date = new Date(); 
 				FileWriter out = new FileWriter(logger.logFile, true);
-				out.write("[User ID "+logIn.inpID+"] [Info] ( "+date.toString()+" )  "+message+"\n");
+				out.write("[User ID "+logIn.ID+"] [Info] ( "+date.toString()+" )  "+message+"\n");
 				out.close();
 			}catch(IOException e){
-				System.err.println("ERROR: Could not write to log file");
+				System.err.println("ERROR: Could Not Write To Log File");
 			}
 		}
 		
@@ -74,10 +74,10 @@ public final  class logger {
 			try{
 				Date date = new Date();
 				FileWriter out = new FileWriter(logger.logFile, true);
-				out.write("[User ID "+logIn.inpID+"] [Error] ( "+date.toString()+" )  "+message+"\n");
+				out.write("[User ID "+logIn.ID+"] [Error] ( "+date.toString()+" )  "+message+"\n");
 				out.close();
 			}catch(IOException e){
-				System.err.println("ERROR: Could not write to log file");
+				System.err.println("ERROR: Could Not Write To Log File");
 			}
 		}
 		
@@ -85,10 +85,10 @@ public final  class logger {
 			try{
 				Date date = new Date();
 				FileWriter out = new FileWriter(logger.logFile, true);
-				out.write("[User ID "+logIn.inpID+"] [Debug] ( "+date.toString()+" )  "+message+"\n");
+				out.write("[User ID "+logIn.ID+"] [Debug] ( "+date.toString()+" )  "+message+"\n");
 				out.close();
 			}catch(IOException e){
-				System.err.println("ERROR: Could not write to log file");
+				System.err.println("ERROR: Could Not Write To Log File");
 			}
 		}
 		
@@ -96,16 +96,12 @@ public final  class logger {
 			try{
 				Date date = new Date();
 				FileWriter out = new FileWriter(logger.logFile, true);
-				out.write("[User ID "+logIn.inpID+"] [Warning] ( " +date.toString()+" )  "+message+"\n");
+				out.write("[User ID "+logIn.ID+"] [Warning] ( " +date.toString()+" )  "+message+"\n");
 				out.close();
 			}catch(IOException e){
-				System.err.println("ERROR: Could not write to log file");
+				System.err.println("ERROR: Could Not Write To Log File");
 			}
 		}
-		
-		
-
-
 	}
 	
 

@@ -14,14 +14,13 @@ public class DeleteTable extends SchemaName implements ManagingDatabase {
             System.out.println("Enter Table Name To drop");
             String table = sc.nextLine();
 
-            String sql = "DROP TABLE "+getGetName()+"."+table;
-            PreparedStatement pstmt = connection.prepareStatement(sql); {
+            String sqlQuery = "DROP TABLE "+ getSchemaName()+ "."+table;
+            PreparedStatement pstmt = connection.prepareStatement(sqlQuery); {
                 // execute the drop statement
                 pstmt.executeUpdate();
-                logger.logInfo("Table "+ table +" Deleted From "+ getGetName() +" Successfully");
+                logger.logInfo("Table "+ table +" Deleted From "+ getSchemaName() +" Successfully");
             }
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
             logger.logError(e.getMessage());
             e.printStackTrace();
         }
