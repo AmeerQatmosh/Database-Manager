@@ -24,9 +24,7 @@ SQL files.
 
 ### 2.5 User authentication and authorization 
 
-All users should authenticate themself before accessing Application.
-
-Each user should be able to access to the database manager based on their permissions:
-a. Admin: Full permission
-b. Staff: Read/Write but can’t delete tables.
-c. Reader: Read only.
+All users should authenticate themself before accessing Application, each user should be able to access to the database manager based on their permissions:
+A. Admin: Full permission
+B. Staff: Read/Write but can’t delete tables.
+C. Reader: Read only.
