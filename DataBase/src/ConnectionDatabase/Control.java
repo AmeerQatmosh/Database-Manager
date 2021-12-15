@@ -35,25 +35,15 @@ public class Control {
 						 pass, 
 						 localhost,
 						 port);
-			  
-//			ConnectionDatabase rs = new ConnectionDatabase();
-//			 rs.getConnection();
-//			
-			  
+			  			  
 			  try {
-				 
 				  return ConnectionDatabase.getConnection();
 			  }
 			  catch(Exception e){
 				  System.out.print(e.getMessage());
-				   
-
 				    logger.logError(e.getMessage());
-					e.printStackTrace();
 			  }
-			  
 			return null;
-//			return DB ;
 	   }
 	public static void main(String args[])
 	{
