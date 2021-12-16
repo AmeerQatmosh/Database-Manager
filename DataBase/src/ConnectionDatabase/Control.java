@@ -8,6 +8,7 @@ import Delete.DeleteData;
 import Delete.DeleteTable;
 import ManagingDB.*;
 import Read.*;
+import exception.connectionException;
 import export.Export;
 import insert.InsertData;
 import logIn.logIn;
@@ -39,7 +40,7 @@ public class Control {
 			  try {
 				  return ConnectionDatabase.getConnection();
 			  }
-			  catch(Exception e){
+			  catch(connectionException e){
 				  System.out.print(e.getMessage());
 				    logger.logError(e.getMessage());
 			  }

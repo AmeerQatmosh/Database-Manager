@@ -16,10 +16,10 @@ public class getConnInfo {
 	private static String Password;
 	private static String URL ;
 	private static int Port;
+
+
 	public static void getNewinfo() {
 		Scanner sc= new Scanner(System.in);
-		
-	
 	System.out.println("Enter The Data Base Information You Need To Connect With : ");
 	System.out.println("Enter User : ");
    	User= sc.nextLine();

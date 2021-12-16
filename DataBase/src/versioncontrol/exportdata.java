@@ -26,21 +26,14 @@ public class exportdata extends SchemaName implements version {
 	            while (rs1.next()) {
 	            	exportdata(connection,rs1.getString("TABLE_NAME"));
 	            }
-	            
-	         
-
 	        } catch (SQLException e) {
 	            logger.logError(e.getMessage());
 	            // TODO Auto-generated catch block
 	            e.printStackTrace();
 	        }
 	}
-	
-	
-	
 	public void exportdata(Connection connection,String table)
 	{
-        
         try {
         Date date = new Date(); 
         String name = "C:\\Users\\MSI\\Desktop\\test2\\version\\"+table+" "+date.toString().replace(' ','-').replace(':', ';')+".csv";
@@ -52,9 +45,7 @@ public class exportdata extends SchemaName implements version {
         Boolean includeHeaders = true;
         Statement stmt = connection.createStatement();
         ResultSet myResultSet = stmt.executeQuery("SELECT * FROM "+getSchemaName()+"."+table);
-
         writer.writeAll(myResultSet, includeHeaders);
-        
         writer.close();
         logger.logInfo("CSV File For Table "+ table +" Is Created Successfully.");
         System.out.println("CSV File For Table "+ table +" Is Created Successfully.");
@@ -63,7 +54,6 @@ public class exportdata extends SchemaName implements version {
         e.printStackTrace();
     }
 	}
-
 	@Override
 	public void operation(Connection database) {
 		getnametable(database);
