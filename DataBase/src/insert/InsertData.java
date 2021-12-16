@@ -18,7 +18,7 @@ public class InsertData extends SchemaName implements ManagingDatabase {
             ResultSet rs = stmt.executeQuery("SELECT * FROM "+getSchemaName()+"."+table);
             ResultSetMetaData rsmd = rs.getMetaData();
             int columnCount = rsmd.getColumnCount();
-            // eg. INSERT INTO Table_name VALUES (1, 'OMAR, 6)
+            // eg. INSERT INTO Table_name VALUES (1, 'OMAR', 6)
             // get values to insert from user
             String Values = "(";
             for (int i =1;i<=columnCount;i++){

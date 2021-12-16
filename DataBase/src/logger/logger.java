@@ -7,13 +7,15 @@ import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import logIn.logIn;
+import signUp.signUp;
 
 public final  class logger {
 		private static final logger instance = new logger();
 		public String logname = "simplelog";
 		protected String env = System.getProperty("user.dir");
 		private static File logFile;
-
+		public static String ID; 
+		
 		public static logger getInstance(){
 			return instance;
 		}
@@ -32,11 +34,9 @@ public final  class logger {
 				logsFolder.mkdir();
 				
 			}
-
 			//Get the current date and time
 			DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 		   	Calendar cal = Calendar.getInstance();
-		   	
 		   	//Create the name of the file from the path and current time
 			logname =  logname + '-' +  dateFormat.format(cal.getTime()) + ".log";
 			logger.logFile = new File(logsFolder.getName(),logname);
@@ -61,9 +61,15 @@ public final  class logger {
 
 		public static void logInfo(String message){
 			try{
-				Date date = new Date(); 
+				Date date = new Date();
+				if(logIn.ID!=null) {
+					ID=logIn.ID;
+				}
+				else {
+					ID=signUp.ID;
+				}
 				FileWriter out = new FileWriter(logger.logFile, true);
-				out.write("[User ID "+logIn.ID+"] [Info] ( "+date.toString()+" )  "+message+"\n");
+				out.write("[User ID "+ID+"] [Info] ( "+date.toString()+" )  "+message+"\n");
 				out.close();
 			}catch(IOException e){
 				System.err.println("ERROR: Could Not Write To Log File");
@@ -73,8 +79,14 @@ public final  class logger {
 		public static void logError(String message){
 			try{
 				Date date = new Date();
+				if(logIn.ID!=null) {
+					ID=logIn.ID;
+				}
+				else {
+					ID=signUp.ID;
+				}
 				FileWriter out = new FileWriter(logger.logFile, true);
-				out.write("[User ID "+logIn.ID+"] [Error] ( "+date.toString()+" )  "+message+"\n");
+				out.write("[User ID "+ID+"] [Error] ( "+date.toString()+" )  "+message+"\n");
 				out.close();
 			}catch(IOException e){
 				System.err.println("ERROR: Could Not Write To Log File");
@@ -84,8 +96,14 @@ public final  class logger {
 		public static void logDebug(String message){
 			try{
 				Date date = new Date();
+				if(logIn.ID!=null) {
+					ID=logIn.ID;
+				}
+				else {
+					ID=signUp.ID;
+				}
 				FileWriter out = new FileWriter(logger.logFile, true);
-				out.write("[User ID "+logIn.ID+"] [Debug] ( "+date.toString()+" )  "+message+"\n");
+				out.write("[User ID "+ID+"] [Debug] ( "+date.toString()+" )  "+message+"\n");
 				out.close();
 			}catch(IOException e){
 				System.err.println("ERROR: Could Not Write To Log File");
@@ -95,8 +113,14 @@ public final  class logger {
 		public static void logWarning(String message){
 			try{
 				Date date = new Date();
+				if(logIn.ID!=null) {
+					ID=logIn.ID;
+				}
+				else {
+					ID=signUp.ID;
+				}
 				FileWriter out = new FileWriter(logger.logFile, true);
-				out.write("[User ID "+logIn.ID+"] [Warning] ( " +date.toString()+" )  "+message+"\n");
+				out.write("[User ID "+ID+"] [Warning] ( " +date.toString()+" )  "+message+"\n");
 				out.close();
 			}catch(IOException e){
 				System.err.println("ERROR: Could Not Write To Log File");

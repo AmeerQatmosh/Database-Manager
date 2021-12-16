@@ -87,3 +87,107 @@ The last packet sent successfully to the server was ? milliseconds ago. The driv
 [User ID 1] [Info] ( Wed Dec 15 06:37:50 IST 2021 )  All user Data Showed Successfully
 [User ID 1] [Info] ( Wed Dec 15 06:38:28 IST 2021 )  CSV File For Table user Is Created Successfully.
 [User ID 1] [Info] ( Wed Dec 15 06:38:36 IST 2021 )  User Closed the sys
+[User ID null] [Info] ( Wed Dec 15 07:15:19 IST 2021 )  Sign-Up new user into system Successfully
+[User ID null] [Info] ( Wed Dec 15 07:15:25 IST 2021 )  User Closed the sys
+[User ID null] [Info] ( Wed Dec 15 07:18:19 IST 2021 )  Sign-Up new user into system Successfully
+[User ID null] [Info] ( Wed Dec 15 07:18:21 IST 2021 )  User Closed the sys
+[User ID 7896] [Info] ( Wed Dec 15 07:19:56 IST 2021 )  Sign-Up new user into system Successfully
+[User ID 7896] [Info] ( Wed Dec 15 07:19:58 IST 2021 )  User Closed the sys
+[User ID 1] [Info] ( Wed Dec 15 07:20:25 IST 2021 )  Log-in Into System Successfully
+[User ID 1] [Info] ( Wed Dec 15 07:20:52 IST 2021 )  Connected To DataBase Successfully
+[User ID 1] [Info] ( Wed Dec 15 07:20:52 IST 2021 )  All Schema Showed Successfully
+[User ID 1] [Info] ( Wed Dec 15 07:20:57 IST 2021 )  Schema mydb Selected Successfully
+[User ID 1] [Info] ( Wed Dec 15 07:21:00 IST 2021 )  User Closed the sys
+[User ID 1] [Warning] ( Wed Dec 15 12:28:39 IST 2021 )  Log-in Into System Failed
+[User ID 1] [Info] ( Wed Dec 15 12:28:48 IST 2021 )  Log-in Into System Successfully
+[User ID 1] [Error] ( Wed Dec 15 12:28:53 IST 2021 )  null
+[User ID 1] [Info] ( Wed Dec 15 12:34:54 IST 2021 )  Log-in Into System Successfully
+[User ID 1] [Error] ( Wed Dec 15 12:35:15 IST 2021 )  The driver was unable to create a connection due to an inability to establish the client portion of a socket.
+
+This is usually caused by a limit on the number of sockets imposed by the operating system. This limit is usually configurable. 
+
+For Unix-based platforms, see the manual page for the 'ulimit' command. Kernel or system reconfiguration may also be required.
+
+For Windows-based platforms, see Microsoft Knowledge Base Article 196271 (Q196271).
+[User ID 1] [Info] ( Wed Dec 15 12:44:33 IST 2021 )  Log-in Into System Successfully
+[User ID 1] [Error] ( Wed Dec 15 12:45:02 IST 2021 )  The driver was unable to create a connection due to an inability to establish the client portion of a socket.
+
+This is usually caused by a limit on the number of sockets imposed by the operating system. This limit is usually configurable. 
+
+For Unix-based platforms, see the manual page for the 'ulimit' command. Kernel or system reconfiguration may also be required.
+
+For Windows-based platforms, see Microsoft Knowledge Base Article 196271 (Q196271).
+[User ID 1] [Info] ( Wed Dec 15 12:46:38 IST 2021 )  Log-in Into System Successfully
+[User ID 1] [Info] ( Wed Dec 15 12:47:09 IST 2021 )  Connected To DataBase Successfully
+[User ID 1] [Info] ( Wed Dec 15 12:47:09 IST 2021 )  All Schema Showed Successfully
+[User ID 1] [Info] ( Wed Dec 15 12:47:44 IST 2021 )  Schema mydb Selected Successfully
+[User ID 1] [Info] ( Wed Dec 15 12:47:51 IST 2021 )  Table user Selected To Show Successfully
+[User ID 1] [Info] ( Wed Dec 15 12:47:51 IST 2021 )  All user Data Showed Successfully
+[User ID 1] [Warning] ( Wed Dec 15 12:49:04 IST 2021 )  Log-in Into System Failed
+[User ID 1] [Info] ( Wed Dec 15 12:49:28 IST 2021 )  Log-in Into System Successfully
+[User ID 1] [Error] ( Wed Dec 15 12:49:42 IST 2021 )  null
+[User ID 1] [Info] ( Wed Dec 15 12:50:31 IST 2021 )  Log-in Into System Successfully
+[User ID 1] [Info] ( Wed Dec 15 12:51:00 IST 2021 )  Connected To DataBase Successfully
+[User ID 1] [Info] ( Wed Dec 15 12:51:00 IST 2021 )  All Schema Showed Successfully
+[User ID 1] [Info] ( Wed Dec 15 12:51:14 IST 2021 )  Schema mydb Selected Successfully
+[User ID 1] [Info] ( Wed Dec 15 12:52:29 IST 2021 )  Table user Selected To Show Successfully
+[User ID 1] [Info] ( Wed Dec 15 12:52:29 IST 2021 )  All user Data Showed Successfully
+[User ID 1] [Info] ( Wed Dec 15 12:52:47 IST 2021 )  CSV File For Table user Is Created Successfully.
+[User ID 1] [Info] ( Wed Dec 15 12:53:28 IST 2021 )  User Closed the sys
+[User ID 1] [Info] ( Wed Dec 15 14:16:09 IST 2021 )  Log-in Into System Successfully
+[User ID 1] [Error] ( Wed Dec 15 14:17:13 IST 2021 )  Before start of result set
+[User ID 1] [Error] ( Wed Dec 15 14:17:13 IST 2021 )  null
+[User ID 1] [Info] ( Wed Dec 15 14:20:45 IST 2021 )  Log-in Into System Successfully
+[User ID 1] [Error] ( Wed Dec 15 14:20:53 IST 2021 )  Before start of result set
+[User ID 1] [Error] ( Wed Dec 15 14:20:53 IST 2021 )  null
+[User ID 1] [Info] ( Wed Dec 15 14:22:04 IST 2021 )  Log-in Into System Successfully
+[User ID 1] [Error] ( Wed Dec 15 14:22:08 IST 2021 )  Before start of result set
+[User ID 1] [Error] ( Wed Dec 15 14:22:08 IST 2021 )  null
+[User ID 1] [Info] ( Wed Dec 15 14:22:43 IST 2021 )  Log-in Into System Successfully
+[User ID 1] [Error] ( Wed Dec 15 14:22:47 IST 2021 )  Before start of result set
+[User ID 1] [Error] ( Wed Dec 15 14:22:47 IST 2021 )  null
+[User ID 1] [Info] ( Wed Dec 15 14:25:23 IST 2021 )  Log-in Into System Successfully
+[User ID 1] [Info] ( Wed Dec 15 14:25:26 IST 2021 )  Connected To DataBase Successfully
+[User ID 1] [Info] ( Wed Dec 15 14:25:26 IST 2021 )  All Schema Showed Successfully
+[User ID 44] [Info] ( Wed Dec 15 14:28:22 IST 2021 )  Log-in Into System Successfully
+[User ID 44] [Info] ( Wed Dec 15 14:28:33 IST 2021 )  Connected To DataBase Successfully
+[User ID 44] [Info] ( Wed Dec 15 14:28:33 IST 2021 )  All Schema Showed Successfully
+[User ID 44] [Info] ( Wed Dec 15 14:29:33 IST 2021 )  Log-in Into System Successfully
+[User ID 44] [Error] ( Wed Dec 15 14:29:57 IST 2021 )  Communications link failure
+
+The last packet sent successfully to the server was ? milliseconds ago. The driver has not received any packets from the server.
+[User ID 1] [Info] ( Wed Dec 15 18:00:23 IST 2021 )  Log-in Into System Successfully
+[User ID 1] [Error] ( Wed Dec 15 18:02:55 IST 2021 )  Access denied for user 'root'@'localhost' (using password: YES)
+[User ID 1] [Info] ( Wed Dec 15 18:03:51 IST 2021 )  Log-in Into System Successfully
+[User ID 1] [Info] ( Wed Dec 15 18:04:07 IST 2021 )  Connected To DataBase Successfully
+[User ID 1] [Info] ( Wed Dec 15 18:04:07 IST 2021 )  All Schema Showed Successfully
+[User ID 1] [Info] ( Wed Dec 15 18:05:00 IST 2021 )  Schema mydb Selected Successfully
+[User ID 1] [Info] ( Wed Dec 15 18:06:02 IST 2021 )  CSV File For Table user Is Created Successfully.
+[User ID 1] [Info] ( Wed Dec 15 18:50:10 IST 2021 )  Log-in Into System Successfully
+[User ID 1] [Info] ( Wed Dec 15 18:52:37 IST 2021 )  Connected To DataBase Successfully
+[User ID 1] [Info] ( Wed Dec 15 18:52:37 IST 2021 )  All Schema Showed Successfully
+[User ID 1] [Info] ( Wed Dec 15 18:52:52 IST 2021 )  Schema mydb Selected Successfully
+[User ID 1] [Error] ( Wed Dec 15 18:54:14 IST 2021 )  Unknown table 'mydb.51'
+[User ID 1] [Info] ( Wed Dec 15 20:56:49 IST 2021 )  Log-in Into System Successfully
+[User ID 1] [Info] ( Wed Dec 15 20:57:58 IST 2021 )  Connected To DataBase Successfully
+[User ID 1] [Info] ( Wed Dec 15 20:57:58 IST 2021 )  All Schema Showed Successfully
+[User ID 1] [Info] ( Wed Dec 15 20:58:04 IST 2021 )  Schema mydb Selected Successfully
+[User ID 1] [Info] ( Wed Dec 15 20:58:18 IST 2021 )  Table user Selected To Show Successfully
+[User ID 1] [Info] ( Wed Dec 15 20:58:18 IST 2021 )  All user Data Showed Successfully
+[User ID 1] [Info] ( Wed Dec 15 20:59:10 IST 2021 )  Log-in Into System Successfully
+[User ID 1] [Info] ( Wed Dec 15 20:59:16 IST 2021 )  Connected To DataBase Successfully
+[User ID 1] [Info] ( Wed Dec 15 20:59:16 IST 2021 )  All Schema Showed Successfully
+[User ID 1] [Info] ( Wed Dec 15 21:44:45 IST 2021 )  Log-in Into System Successfully
+[User ID 1] [Info] ( Wed Dec 15 21:45:22 IST 2021 )  Log-in Into System Successfully
+[User ID 1] [Info] ( Wed Dec 15 21:45:39 IST 2021 )  Connected To DataBase Successfully
+[User ID 1] [Info] ( Wed Dec 15 21:45:39 IST 2021 )  All Schema Showed Successfully
+[User ID 1] [Info] ( Wed Dec 15 21:45:43 IST 2021 )  Schema mydb Selected Successfully
+[User ID 1] [Info] ( Wed Dec 15 21:45:47 IST 2021 )  CSV File For Table dbinformation Is Created Successfully.
+[User ID 1] [Info] ( Wed Dec 15 21:45:47 IST 2021 )  CSV File For Table test Is Created Successfully.
+[User ID 1] [Info] ( Wed Dec 15 21:45:47 IST 2021 )  CSV File For Table user Is Created Successfully.
+[User ID 1] [Info] ( Wed Dec 15 23:53:54 IST 2021 )  Log-in Into System Successfully
+[User ID 1] [Info] ( Wed Dec 15 23:54:12 IST 2021 )  Connected To DataBase Successfully
+[User ID 1] [Info] ( Wed Dec 15 23:54:12 IST 2021 )  All Schema Showed Successfully
+[User ID 1] [Info] ( Wed Dec 15 23:54:18 IST 2021 )  Schema mydb Selected Successfully
+[User ID 1] [Warning] ( Wed Dec 15 23:57:07 IST 2021 )  Log-in Into System Failed
+[User ID 1] [Info] ( Wed Dec 15 23:57:11 IST 2021 )  User Closed the sys

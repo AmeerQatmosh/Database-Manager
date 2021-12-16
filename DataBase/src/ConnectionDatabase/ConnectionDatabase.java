@@ -2,6 +2,8 @@ package ConnectionDatabase;
 
 import java.sql.*;
 import java.util.Properties;
+
+import exception.connectionException;
 import logger.logger;
 public class ConnectionDatabase {
 	 private static String User;
@@ -9,7 +11,7 @@ public class ConnectionDatabase {
 	 private static String URL;
 	 private static int Port;
 	
-	public static Connection getConnection() {
+	public static Connection getConnection() throws connectionException {
 		SetDataInfo();
 		Connection connection = null;
 		try {

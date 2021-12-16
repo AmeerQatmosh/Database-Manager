@@ -14,27 +14,28 @@ import logIn.logIn;
 import logger.logger;
 import profile.*;
 import signUp.*;
+import versioncontrol.version;
+import versioncontrol.versionfactory;
 
 public class Control {
-	
+		 static mysql sql = new mysql ();
+		 static Connection connectionMySQL  = sql.getConnection();
+		 
 	   private static  Connection connectionDataBase()
 	   {
+		   System.out.println("Connect To New DataBase : 1");
+		   System.out.println("Connect To Old DataBase : 2");
 		   Scanner sc= new Scanner(System.in);
-			System.out.println("Enter The Data Base Information You Need To Connect With : ");
-			System.out.println("Enter User : ");
-		   	 String User= sc.nextLine();
-		   	System.out.println("Enter Password : ");
-		 	  String Password=sc.nextLine();
-		 	 System.out.println("Enter URL : ");
-			  String URL=sc.nextLine();
-			  System.out.println("Enter Port number : ");
-			  int Port=sc.nextInt();
-			  
+		   int Choice = sc.nextInt();
+		   if (Choice==1) 
+			  getConnInfo.getNewinfo ();
+		   else if (Choice==2)
+			   getConnInfo.getOldinfo(connectionMySQL);
 			  InfoDataBase info = new InfoDataBase(
-						 User,
-						 Password, 
-						 URL,
-						 Port);
+					  getConnInfo.getUser(),
+					  getConnInfo.getPassword(), 
+					  getConnInfo.getURL(),
+					  getConnInfo.getPort());
 			  try {
 				  return ConnectionDatabase.getConnection();
 			  }
@@ -47,8 +48,8 @@ public class Control {
 	public static void main(String args[])
 	{
 		System.out.println("Connection DataBase");
-		mysql sql = new mysql ();
-		Connection connectionMySQL  = sql.getConnection();
+		
+		
 		System.out.println("Sign Up : 1");
 		System.out.println("Log In : 2");
 		System.out.println("Exit : 0");
@@ -61,6 +62,7 @@ public class Control {
 		ManagingDatabase Delete = factoryManaging.Data("DeleteData");
 		ManagingDatabase Insert = factoryManaging.Data("InsertData");
 		ManagingDatabase Export = factoryManaging.Data("ExportData");
+		version Snapshots = versionfactory.Snap("export");
 		while (Option1!= 0) {
 			switch(Option1) {
 			  case 1:
@@ -78,6 +80,7 @@ public class Control {
 				  System.out.println("DeleteData : 3");
 				  System.out.println("DropTable : 4");
 				  System.out.println("ExportTable : 5");
+				  System.out.println("Snapshot : 6");
 				  System.out.println("LogOut : 0");
 				  int Option2 = sc.nextInt();
 				  while(Option2!=0) {
@@ -96,6 +99,9 @@ public class Control {
 							  break;
 						  case 5:
 							  Export.ManagingTable(connection);
+							  break;
+						  case 6:
+							  Snapshots.operation(connection);
 							  break;
 					  	case 0:
 							  logger.logInfo("User Signed-Out From System");

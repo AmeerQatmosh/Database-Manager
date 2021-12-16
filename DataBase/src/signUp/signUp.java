@@ -9,7 +9,9 @@ import java.util.Scanner;
 import logger.logger;
 
 public class signUp {
-	static String  ID ,Name ,Password ;
+	public static String  ID ;
+	static String Name;
+	static String Password;
 	static int  Type;
 	static logger log ;
 	public static void signup (Connection connection) {

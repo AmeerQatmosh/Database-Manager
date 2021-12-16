@@ -1,0 +1,48 @@
+[User ID 1] [Warning] ( Thu Dec 16 02:53:48 IST 2021 )  Sign-Up Into System Failed
+[User ID 1] [Info] ( Thu Dec 16 02:54:01 IST 2021 )  User Closed the sys
+[User ID 1] [Warning] ( Thu Dec 16 02:55:57 IST 2021 )  Sign-Up Into System Failed
+[User ID 1] [Info] ( Thu Dec 16 02:56:00 IST 2021 )  User Closed the sys
+[User ID 1] [Warning] ( Thu Dec 16 02:56:18 IST 2021 )  Log-in Into System Failed
+[User ID 1] [Info] ( Thu Dec 16 02:56:28 IST 2021 )  Log-in Into System Successfully
+[User ID 1] [Info] ( Thu Dec 16 02:58:57 IST 2021 )  Connected To DataBase Successfully
+[User ID 1] [Info] ( Thu Dec 16 02:58:57 IST 2021 )  All Schema Showed Successfully
+[User ID 1] [Info] ( Thu Dec 16 02:59:01 IST 2021 )  Schema mydb Selected Successfully
+[User ID 1] [Info] ( Thu Dec 16 02:59:14 IST 2021 )  Table emp Selected To Show Successfully
+[User ID 1] [Info] ( Thu Dec 16 02:59:14 IST 2021 )  All emp Data Showed Successfully
+[User ID 1] [Info] ( Thu Dec 16 02:59:50 IST 2021 )  Inserted Into emp Successfully
+[User ID 1] [Info] ( Thu Dec 16 02:59:55 IST 2021 )  Table emp Selected To Show Successfully
+[User ID 1] [Info] ( Thu Dec 16 02:59:55 IST 2021 )  All emp Data Showed Successfully
+[User ID 1] [Info] ( Thu Dec 16 03:00:43 IST 2021 )  Inserted Into emp Successfully
+[User ID 1] [Info] ( Thu Dec 16 03:01:28 IST 2021 )  Log-in Into System Successfully
+[User ID 1] [Info] ( Thu Dec 16 03:01:36 IST 2021 )  Connected To DataBase Successfully
+[User ID 1] [Info] ( Thu Dec 16 03:01:36 IST 2021 )  All Schema Showed Successfully
+[User ID 1] [Info] ( Thu Dec 16 03:01:41 IST 2021 )  Schema mydb Selected Successfully
+[User ID 1] [Info] ( Thu Dec 16 03:02:05 IST 2021 )  Inserted Into emp Successfully
+[User ID 1] [Info] ( Thu Dec 16 03:02:29 IST 2021 )  Inserted Into emp Successfully
+[User ID 1] [Info] ( Thu Dec 16 03:02:34 IST 2021 )  Table emp Selected To Show Successfully
+[User ID 1] [Info] ( Thu Dec 16 03:02:34 IST 2021 )  All emp Data Showed Successfully
+[User ID 1] [Info] ( Thu Dec 16 03:02:52 IST 2021 )  Rows Deleted From emp Successfully
+[User ID 1] [Info] ( Thu Dec 16 03:03:14 IST 2021 )  Inserted Into emp Successfully
+[User ID 1] [Info] ( Thu Dec 16 03:03:18 IST 2021 )  Table emp Selected To Show Successfully
+[User ID 1] [Info] ( Thu Dec 16 03:03:18 IST 2021 )  All emp Data Showed Successfully
+[User ID 1] [Info] ( Thu Dec 16 03:03:51 IST 2021 )  Inserted Into emp Successfully
+[User ID 1] [Info] ( Thu Dec 16 03:03:56 IST 2021 )  User Closed the sys
+[User ID 118] [Info] ( Thu Dec 16 03:07:12 IST 2021 )  Sign-Up new user into system Successfully
+[User ID 118] [Info] ( Thu Dec 16 03:07:48 IST 2021 )  Log-in Into System Successfully
+[User ID 118] [Error] ( Thu Dec 16 03:08:18 IST 2021 )  Access denied for user 'root'@'localhost' (using password: YES)
+[User ID 118] [Info] ( Thu Dec 16 03:08:51 IST 2021 )  Log-in Into System Successfully
+[User ID 118] [Info] ( Thu Dec 16 03:09:12 IST 2021 )  Connected To DataBase Successfully
+[User ID 118] [Info] ( Thu Dec 16 03:09:12 IST 2021 )  All Schema Showed Successfully
+[User ID 118] [Info] ( Thu Dec 16 03:09:16 IST 2021 )  Schema mydb Selected Successfully
+[User ID 118] [Info] ( Thu Dec 16 03:09:21 IST 2021 )  Table user Selected To Show Successfully
+[User ID 118] [Info] ( Thu Dec 16 03:09:21 IST 2021 )  All user Data Showed Successfully
+[User ID 118] [Info] ( Thu Dec 16 03:09:27 IST 2021 )  Table emp Selected To Show Successfully
+[User ID 118] [Info] ( Thu Dec 16 03:09:27 IST 2021 )  All emp Data Showed Successfully
+[User ID 118] [Info] ( Thu Dec 16 03:09:37 IST 2021 )  Table dbinformation Selected To Show Successfully
+[User ID 118] [Info] ( Thu Dec 16 03:09:37 IST 2021 )  All dbinformation Data Showed Successfully
+[User ID 118] [Info] ( Thu Dec 16 03:10:34 IST 2021 )  CSV File For Table dbinformation Is Created Successfully.
+[User ID 118] [Info] ( Thu Dec 16 03:10:34 IST 2021 )  CSV File For Table emp Is Created Successfully.
+[User ID 118] [Info] ( Thu Dec 16 03:10:34 IST 2021 )  CSV File For Table user Is Created Successfully.
+[User ID 118] [Info] ( Thu Dec 16 03:10:45 IST 2021 )  CSV File For Table emp Is Created Successfully.
+[User ID 118] [Info] ( Thu Dec 16 03:11:28 IST 2021 )  Inserted Into emp Successfully
+[User ID 118] [Info] ( Thu Dec 16 03:11:32 IST 2021 )  User Closed the sys

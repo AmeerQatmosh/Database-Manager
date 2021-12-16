@@ -27,7 +27,6 @@ public class ReadSchema extends SchemaName implements ManagingDatabase {
             e.printStackTrace();
         }
     }
-
     public void ManagingTable(Connection databaseConnection) {
         getSchema(databaseConnection);
 
