@@ -81,7 +81,7 @@ public class Control {
 				  System.out.println("DeleteData : 3");
 				  System.out.println("DropTable : 4");
 				  System.out.println("ExportTable : 5");
-				  System.out.println("Snapshot : 6");
+				  System.out.println("CreateSnapshot : 6");
 				  System.out.println("LogOut : 0");
 				  int Option2 = sc.nextInt();
 				  while(Option2!=0) {
@@ -116,6 +116,7 @@ public class Control {
 						  System.out.println("DeleteData : 3");
 						  System.out.println("DropTable : 4");
 						  System.out.println("ExportTable : 5");
+						  System.out.println("CreateSnapshot : 6");
 						  System.out.println("LogOut : 0");
 						  Option2 = sc.nextInt();
 				  }
