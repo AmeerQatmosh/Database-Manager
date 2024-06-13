@@ -22,7 +22,7 @@ public class Export extends SchemaName implements ManagingDatabase {
             String table = sc.nextLine();
 
             Date date = new Date(); 
-            String name = "C:\\Users\\MSI\\Desktop\\test2\\"+table+" "+date.toString().replace(' ','-').replace(':', ';')+".csv";
+            String name = "~\\Desktop\\test2\\"+table+" "+date.toString().replace(' ','-').replace(':', ';')+".csv";
             CSVWriter writer = new CSVWriter(new FileWriter(name, false),',',
             CSVWriter.NO_QUOTE_CHARACTER,
             CSVWriter.DEFAULT_ESCAPE_CHARACTER,

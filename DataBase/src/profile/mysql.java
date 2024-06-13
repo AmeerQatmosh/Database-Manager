@@ -7,7 +7,7 @@ public class mysql {
 	try{  
 		 
 		Connection connection=DriverManager.getConnection(  
-		"jdbc:mysql://localhost:3306/mydb","root","qwe123!@#");  
+		"jdbc:mysql://localhost:3306/mydb","root","aamq1234");
 		Statement stmt=connection.createStatement();  
 		
 		return connection ;

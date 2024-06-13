@@ -1,0 +1,12 @@
+[User ID null] [Error] ( Sun Jun 09 02:26:43 EEST 2024 )  No suitable driver found for jdbc:mysql://localhost:3306/mydb
+[User ID 11923652] [Error] ( Sun Jun 09 02:27:01 EEST 2024 )  Cannot invoke "java.sql.Connection.createStatement()" because "connection" is null
+[User ID null] [Error] ( Sun Jun 09 02:27:47 EEST 2024 )  No suitable driver found for jdbc:mysql://localhost:3306/mydb
+[User ID Ameer Qatmosh] [Error] ( Sun Jun 09 02:28:24 EEST 2024 )  Cannot invoke "java.sql.Connection.createStatement()" because "connection" is null
+[User ID null] [Error] ( Sun Jun 09 02:30:12 EEST 2024 )  No suitable driver found for jdbc:mysql://localhost:3306/mydb
+[User ID 12] [Error] ( Sun Jun 09 02:30:16 EEST 2024 )  Cannot invoke "java.sql.Connection.createStatement()" because "connection" is null
+[User ID null] [Error] ( Sun Jun 09 02:33:18 EEST 2024 )  No suitable driver found for jdbc:mysql://localhost:3306/mydb
+[User ID 1] [Error] ( Sun Jun 09 02:33:23 EEST 2024 )  Cannot invoke "java.sql.Connection.createStatement()" because "connection" is null
+[User ID null] [Error] ( Sun Jun 09 02:37:20 EEST 2024 )  No suitable driver found for jdbc:mysql://localhost:3306
+[User ID 12] [Error] ( Sun Jun 09 02:37:27 EEST 2024 )  Cannot invoke "java.sql.Connection.createStatement()" because "connection" is null
+[User ID null] [Error] ( Sun Jun 09 09:59:07 EEST 2024 )  No suitable driver found for jdbc:mysql://localhost:3306/mydb
+[User ID 1] [Error] ( Sun Jun 09 09:59:18 EEST 2024 )  Cannot invoke "java.sql.Connection.createStatement()" because "connection" is null

@@ -4,7 +4,7 @@ import java.io.*;
 import java.sql.*;
 
 public class rescive implements version {
-    String path = "C:\\Users\\MSI\\Desktop\\test2\\version";
+    String path = "~Desktop\\test2\\version";
 
 	public  void importfile(Connection database)
 	{
