@@ -6,12 +6,172 @@
   <component name="ChangeListManager">
     <list default="true" id="7fdbfb3c-9f18-4984-bd10-11d72688802f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_23.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_23.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/.org.eclipse.egit.core.cmp/.location" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/.org.eclipse.egit.core.cmp/.location" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/history.version" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/history.version" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.version" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.version" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/2.tree" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/2.tree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jsch.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jsch.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.m2e.discovery.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.m2e.discovery.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.urischeme.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.urischeme.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.egit.core/.org.eclipse.egit.core.cmp/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.egit.core/.org.eclipse.egit.core.cmp/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/assumedExternalFilesCache" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/assumedExternalFilesCache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/javaLikeNames.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/javaLikeNames.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/OpenTypeHistory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/OpenTypeHistory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback.configuration/logback.1.16.1.20210603-1006.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback.configuration/logback.1.16.1.20210603-1006.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.oomph.setup/workspace.setup" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.oomph.setup/workspace.setup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.tips.ide/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.tips.ide/dialog_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.intro/introstate" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.intro/introstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/version.ini" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/version.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/.idea/libraries/mysql_connector_java_8_0_23.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/.idea/libraries/mysql_connector_java_8_0_23.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/.idea/libraries/opencsv_5_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/.idea/libraries/opencsv_5_5_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/DataBase.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/DataBase.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/ConnectionDatabase/ConnectionDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/ConnectionDatabase/ConnectionDatabase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/ConnectionDatabase/Control.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/ConnectionDatabase/Control.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/ConnectionDatabase/InfoDataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/ConnectionDatabase/InfoDataBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/ConnectionDatabase/getConnInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/ConnectionDatabase/getConnInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/ConnectionDatabase/package-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/ConnectionDatabase/package-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/Delete/DeleteData.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/Delete/DeleteData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/Delete/DeleteTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/Delete/DeleteTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/Import/Imports.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/Import/Imports.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/Import/importCSV.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/Import/importCSV.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/Import/importfactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/Import/importfactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/Import/jsonfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/Import/jsonfile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/Import/sql.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/Import/sql.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/ManagingDB/ManagingDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/ManagingDB/ManagingDatabase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/ManagingDB/SchemaName.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/ManagingDB/SchemaName.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/ManagingDB/factoryManaging.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/ManagingDB/factoryManaging.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/Read/ReadSchema.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/Read/ReadSchema.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/Read/ReadTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/Read/ReadTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/exception/connectionException.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/exception/connectionException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/export/Export.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/export/Export.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/insert/InsertData.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/insert/InsertData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/logIn/logIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/logIn/logIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/logger/logger.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/logger/logger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/profile/StoreInfoDBs.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/profile/StoreInfoDBs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/profile/mysql.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/profile/mysql.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/signUp/signUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/signUp/signUp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/versioncontrol/exportdata.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/versioncontrol/exportdata.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/versioncontrol/rescive.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/versioncontrol/rescive.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/versioncontrol/version.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/versioncontrol/version.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/bin/versioncontrol/versionfactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/bin/versioncontrol/versionfactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/libs/mysql-connector-java-8.0.23.jar" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/libs/mysql-connector-java-8.0.23.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/libs/opencsv-5.5.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/libs/opencsv-5.5.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/src/ConnectionDatabase/ConnectionDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/ConnectionDatabase/ConnectionDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/src/ConnectionDatabase/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/ConnectionDatabase/Control.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/src/ConnectionDatabase/InfoDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/ConnectionDatabase/InfoDataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/src/ConnectionDatabase/getConnInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/ConnectionDatabase/getConnInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/src/ConnectionDatabase/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/ConnectionDatabase/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/src/Delete/DeleteData.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/Delete/DeleteData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/src/Delete/DeleteTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/Delete/DeleteTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/src/Import/Imports.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/Import/Imports.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/src/Import/importCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/Import/importCSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/src/Import/importfactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/Import/importfactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/src/Import/jsonfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/Import/jsonfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/src/Import/sql.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/Import/sql.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/src/ManagingDB/ManagingDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/ManagingDB/ManagingDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/src/ManagingDB/SchemaName.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/ManagingDB/SchemaName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/src/ManagingDB/factoryManaging.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/ManagingDB/factoryManaging.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/src/Read/ReadSchema.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/Read/ReadSchema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/src/Read/ReadTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/Read/ReadTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/src/exception/connectionException.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/exception/connectionException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataBase/src/export/Export.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/export/Export.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/src/insert/InsertData.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/insert/InsertData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/src/logIn/logIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/logIn/logIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/src/logger/logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/logger/logger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/src/profile/StoreInfoDBs.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/profile/StoreInfoDBs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataBase/src/profile/mysql.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/profile/mysql.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/src/signUp/signUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/signUp/signUp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataBase/src/versioncontrol/exportdata.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/versioncontrol/exportdata.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataBase/src/versioncontrol/rescive.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/versioncontrol/rescive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/src/versioncontrol/version.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/versioncontrol/version.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/src/versioncontrol/versionfactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/src/versioncontrol/versionfactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/db.mwb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/10.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/11.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/12.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/13.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/13.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/14.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/14.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/15.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/15.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/16.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/9.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/simplelog-2024-06-09.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/simplelog-2024-06-09.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/simplelog-٢٠٢١-١٢-١٤.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/simplelog-٢٠٢١-١٢-١٤.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/simplelog-٢٠٢١-١٢-١٥.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/simplelog-٢٠٢١-١٢-١٥.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/simplelog-٢٠٢١-١٢-١٦.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/simplelog-٢٠٢١-١٢-١٦.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/ConnectionDatabase/ConnectionDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/ConnectionDatabase/ConnectionDatabase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/ConnectionDatabase/Control.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/ConnectionDatabase/Control.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/ConnectionDatabase/InfoDataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/ConnectionDatabase/InfoDataBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/ConnectionDatabase/getConnInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/ConnectionDatabase/getConnInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/Delete/DeleteData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/Delete/DeleteData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/Delete/DeleteTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/Delete/DeleteTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/Import/Imports.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/Import/Imports.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/Import/importCSV.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/Import/importCSV.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/Import/importfactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/Import/importfactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/Import/jsonfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/Import/jsonfile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/Import/sql.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/Import/sql.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/ManagingDB/ManagingDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/ManagingDB/ManagingDatabase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/ManagingDB/SchemaName.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/ManagingDB/SchemaName.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/ManagingDB/factoryManaging.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/ManagingDB/factoryManaging.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/Read/ReadSchema.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/Read/ReadSchema.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/Read/ReadTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/Read/ReadTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/exception/connectionException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/exception/connectionException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/export/Export.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/export/Export.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/insert/InsertData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/insert/InsertData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/logIn/logIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/logIn/logIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/logger/logger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/logger/logger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/profile/StoreInfoDBs.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/profile/StoreInfoDBs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/profile/mysql.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/profile/mysql.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/signUp/signUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/signUp/signUp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/versioncontrol/exportdata.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/versioncontrol/exportdata.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/versioncontrol/rescive.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/versioncontrol/rescive.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/versioncontrol/version.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/versioncontrol/version.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_advance/versioncontrol/versionfactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project_advance/versioncontrol/versionfactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_advance.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project_advance.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,24 +185,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "AmeerQatmosh"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AmeerQatmosh&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/AmeerQatmosh/Database-Manager.git",
-    "accountId": "ce9270ab-cef4-45eb-a895-243566316e2c"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AmeerQatmosh/Database-Manager.git&quot;,
+    &quot;accountId&quot;: &quot;ce9270ab-cef4-45eb-a895-243566316e2c&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="228VUpuOHZUxu6SGQijOtkHPAq6" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -52,8 +212,10 @@
   "keyToString": {
     "Application.Control.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/ameerqatmosh/IdeaProjects/Database-Manager",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
